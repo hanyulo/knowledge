@@ -6,12 +6,13 @@ This is the repo that keep an record for what I have learned as an Front End Dev
 ## Index Table of Contents
 
 ### Done
-1. [html]()
+1. [html](./html/index.md)
 2. css
 3. javascript
 4. react + redux
 5. webpack
 6. Computer Network
+7. [design_pattern](./design_pattern/index.md)
 
 ### Backlog Item
 1. backlog
