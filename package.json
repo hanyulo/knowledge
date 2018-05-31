@@ -1,0 +1,25 @@
+{
+  "name": "web_konwledge",
+  "version": "1.0.0",
+  "description": "my personal note for web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanyulo/web_knowledge.git"
+  },
+  "keywords": [
+    "front",
+    "end",
+    "web",
+    "development"
+  ],
+  "author": "hanyulo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanyulo/web_knowledge/issues"
+  },
+  "homepage": "https://github.com/hanyulo/web_knowledge#readme"
+}
