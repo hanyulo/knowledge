@@ -11,8 +11,9 @@ This is the repo that keep an record for what I have learned as an Front End Dev
 3. javascript
 4. react + redux
 5. [webpack](./webpack/index.md)
-6. Computer Network
+6. [Computer Network](./computer_network/index.md)
 7. [design_pattern](./design_pattern/index.md)
+8. [Data Base](./data_base/index.md)
 
 ### Backlog Item
 1. backlog
