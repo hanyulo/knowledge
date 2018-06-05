@@ -14,6 +14,9 @@ This is the repo that keep an record for what I have learned as an Front End Dev
 6. [Computer Network](./computer_network/index.md)
 7. [design_pattern](./design_pattern/index.md)
 8. [Data Base](./data_base/index.md)
+9. [Express](./express/index.md)
+10. [Google Analytics](./ga/index.md)
+11. [Git](./git/index.md)
 
 ### Backlog Item
 1. backlog
