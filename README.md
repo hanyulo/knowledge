@@ -17,8 +17,20 @@ This is the repo that keep an record for what I have learned as an Front End Dev
 9. [Express](./express/index.md)
 10. [Google Analytics](./ga/index.md)
 11. [Git](./git/index.md)
+12. [Image](./image/index.md)
+13. [Javascript](./javascript/index.md)
+14. [Website Structure](./structure/index.md)
 
-### Backlog Item
-1. backlog
+### Backlog Items
+1. [Regular Expression](https://github.com/zeeshanu/learn-regex)
+2. CDN
+3. CI/CD vs QA
+4. http request header
+  1. [Cache-Control](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)
+  2. ....
+5. react-router match
+6. [fetch package with cookies](https://github.com/github/fetch#sending-cookies)
+7. createStore(reducer, defaultState, middleware)
+8. Google Dev tool course
 
 ### Development Plain
