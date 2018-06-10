@@ -22,7 +22,7 @@ ex
 * [ContextReplacementPlugin](./contents/ContextReplacementPlugin.md)
 * [DefinePlugin - proncess.env.NODE_ENV](./contents/define_plugin.md)
 * [ContentBase, Public Path](./contents/cb_pp.md)
-* [Image/File/Url Loader](./contents/iful.md)
+* [File/Url Loader](./contents/file_url_loader.md)
 
 ## To Read
 * Code splitting + dynamic import

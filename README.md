@@ -20,6 +20,8 @@ This is the repo that keep an record for what I have learned as an Front End Dev
 12. [Image](./image/index.md)
 13. [Javascript](./javascript/index.md)
 14. [Website Structure](./structure/index.md)
+15. [Testing](./testing/index.md)
+16. [Project Directory Organization](./project_directory_organization)
 
 ### Backlog Items
 1. [Regular Expression](https://github.com/zeeshanu/learn-regex)
