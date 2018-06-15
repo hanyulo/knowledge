@@ -22,6 +22,8 @@ This is the repo that keep an record for what I have learned as an Front End Dev
 14. [Website Structure](./structure/index.md)
 15. [Testing](./testing/index.md)
 16. [Project Directory Organization](./project_directory_organization)
+17. [npm](./npm/index.md)
+18. [course](./course/index.md)
 
 ### Backlog Items
 1. [Regular Expression](https://github.com/zeeshanu/learn-regex)
@@ -32,7 +34,20 @@ This is the repo that keep an record for what I have learned as an Front End Dev
   2. ....
 5. react-router match
 6. [fetch package with cookies](https://github.com/github/fetch#sending-cookies)
-7. createStore(reducer, defaultState, middleware)
-8. Google Dev tool course
+7. createStore(reducer, defaultState, middleware).
+8. Google Dev tool course.
+9. React Advanced Pattern.
+10. Session vs Cookie vs Localstorage + token + React cookie github
+ * https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
+ * https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting
+ * https://www.acunetix.com/websitesecurity/cross-site-scripting/
+ * https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+11. withRouter
+12. domain + host
+13. Provisional headers are shown (check network of chrome)
+  * Reason is that the requested source is cached.
+14. [CSRF](https://www.acunetix.com/blog/articles/csrf-xss-brothers-arms/)
+15. git reset/rebase/merge/push
+
 
 ### Development Plain

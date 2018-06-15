@@ -6,9 +6,7 @@ Take twreporter.org for example, Only icons that are locate at website permanent
 
 
 ## To Read
-
-* base 64 ??
 * inline-svg
 * get resource
-* webpack image loader
 * Lazy load
+* Open Graph - Facebook

@@ -11,7 +11,9 @@
 * Pure Component
 * Higher Order Component
 * Compound Component
-* Render Props
+* [Render Props](https://reactjs.org/docs/render-props.html)
+  * [React Motion](https://github.com/chenglou/react-motion)
+  * [React Router](https://reacttraining.com/react-router/web/api/Route/render-func)
 * Smart/Dumb Components
 * ...
 
