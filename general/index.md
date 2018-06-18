@@ -3,5 +3,6 @@
 
 ## Index of Contents
 
-* [Main]('./contents/main.md')
-* [Server Side Rendering]('./contents/ssr.md')
+* [Static VS. Dynamic](./contents/static_dynamic.md)
+* [Server Side Rendering](./contents/ssr.md)
+* [URL](./contents/url.md)

@@ -18,7 +18,7 @@
 * E-governance site
 * blog
 
-## Terminlolgy
+## Terminology
 1. Homepage
 2. Landing page: for specific advertisement and focus on conversion.
 3. Gateway page: Highly optimized for SEO. Small, simple and provide hyperlinks to main website.
