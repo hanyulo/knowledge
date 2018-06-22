@@ -48,7 +48,7 @@ This is the repo that keep an record for what I have learned as an Front End Dev
 13. Provisional headers are shown (check network of chrome)
   * Reason is that the requested source is cached.
 14. [**CSRF**](https://www.acunetix.com/blog/articles/csrf-xss-brothers-arms/)
-15. git reset/rebase/merge/push
+15. git reset/rebase/merge/push (Figure out merge rebase in work )
 
 
 ### Development Plain

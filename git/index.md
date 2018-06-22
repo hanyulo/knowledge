@@ -4,6 +4,7 @@
 * [Cherry Pick]('./contents/cherry_pick.md')
 * [Version Control]('./contents/versoin.md')
 * [Merge VS Rebasing](./contents/merge_vs_rebase.md)
+* [Simple Command](./contents/command.md)
 
 ## To Read
 * Tag part of github code.
