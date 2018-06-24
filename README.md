@@ -25,6 +25,7 @@ This is the repo that keep an record for what I have learned as an Front End Dev
 17. [npm](./npm/index.md)
 18. [course](./course/index.md)
 19. [debug](./debug/index.md)
+20. [Good Read](./good_read/index.md)
 
 ### Backlog Items
 1. [Regular Expression](https://github.com/zeeshanu/learn-regex)
