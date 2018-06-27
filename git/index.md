@@ -5,6 +5,7 @@
 * [Version Control]('./contents/versoin.md')
 * [Merge VS Rebasing](./contents/merge_vs_rebase.md)
 * [Simple Command](./contents/command.md)
+* [Reset](./contents/reset.md)
 
 ## To Read
 * Tag part of github code.
@@ -14,3 +15,5 @@
 * Revert merge commit
 * HEAD^, HEAD~3
 * git pull --rebase (default is merge)
+* Git commit message conventions
+* git rebase/merge/push (Figure out merge rebase in work )
