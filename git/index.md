@@ -5,7 +5,7 @@
 * [Version Control]('./contents/versoin.md')
 * [Merge VS Rebasing](./contents/merge_vs_rebase.md)
 * [Simple Command](./contents/command.md)
-* [Reset](./contents/reset.md)
+* [Undoing Changes](./contents/undoing_changes.md)
 
 ## To Read
 * Tag part of github code.
@@ -17,3 +17,10 @@
 * git pull --rebase (default is merge)
 * Git commit message conventions
 * git rebase/merge/push (Figure out merge rebase in work )
+
+## ToRead
+* [reset](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
+* [checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout)
+* [revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert)
+* [clean](https://www.atlassian.com/git/tutorials/undoing-changes/git-clean)
+* [Reset, Checkout, Revert - Atlassian](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)

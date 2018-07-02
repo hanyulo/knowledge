@@ -7,6 +7,7 @@
 [Cross Browser](./contents/cross_browser.md)
 [block]
 [Animation Performance](./contents/animation_performance.md)
+[Terminology](./content/terminology.md)
 
 
 

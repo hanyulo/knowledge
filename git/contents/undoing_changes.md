@@ -1,4 +1,4 @@
-# Reset, Checkout, Revert
+# Undoing Changes Overview
 
 ## Overview
 * Three main file states of git (Three Trees)
@@ -8,7 +8,6 @@
 
 * commit
   * Commit is a snapshot of specific timeline of your project.
-  *
 
 * Ref
   * Is like a pointer.
@@ -18,6 +17,15 @@
 
 * SHA-1 identifying hash
   * Is id number of commit
+
+* Three ways
+  1. revert
+    * good for public repo
+  2. reset
+    * good for private branch
+  3. checkout
+    * good for creating new branch
+    * Time travel
 
 ## Checkout
 
@@ -57,25 +65,37 @@
 ```bash
 git reset --hard a1e8fb5
 ```
-
 * Good for working on local private branch.
 * No added history.
+* Remove commits from shared working history.
+* Be cautious, if you do reset on shared repo, when you do git push, git may consider your branch is out of date and prohibit you to continue so.
+
+* --mixed is default behavior.
 
 ## Revert
 
 ```bash
 git revert HEAD
 ```
-* This is good for working on collaborative repo.
+* This is good for working on **collaborative repo**.
 * Add new commit to note revert action.
 * The reverted commit will still be kept in history.
 * If you want curated commits history, it is not a good way.
 
-## ToRea
-* reset: https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
-* checkout: https://www.atlassian.com/git/tutorials/using-branches/git-checkout
-* revert: https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
+## Various Scenarios
+### Undoing the last commit
+```bash
+git commit --amend
+```
+### Undoing uncommitted changes
+* git reset for both working directory & staging inedx.
+
+### The working directory
+* git clean
+* git rest --hard/--mixed
+
+### The staging index
+* git reset
 
 ## References
-[Reset, Checkout, Revert - Atlassian](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 [Checkout - Undoing Changes - Atlassian](https://www.atlassian.com/git/tutorials/undoing-changes)

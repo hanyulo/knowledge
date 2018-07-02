@@ -50,5 +50,6 @@ This is the repo that keep an record for what I have learned as an Front End Dev
   * Reason is that the requested source is cached.
 14. [**CSRF**](https://www.acunetix.com/blog/articles/csrf-xss-brothers-arms/)
 15. Javascript Class Syntax Scope
+16. npm rebuild
 
 ### Development Plain

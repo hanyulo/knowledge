@@ -23,6 +23,8 @@ ex
 * [DefinePlugin - proncess.env.NODE_ENV](./contents/define_plugin.md)
 * [ContentBase, Public Path](./contents/cb_pp.md)
 * [File/Url Loader](./contents/file_url_loader.md)
+* [Migragion](./contents/migration.md)
+* [Code Splitting - Chunk](./contents/code_splitting_chunk.md)
 
 ## To Read
 * Code splitting + dynamic import
