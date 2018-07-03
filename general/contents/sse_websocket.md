@@ -67,7 +67,7 @@
 
 ## To Do
 * [Webpsocket - html5 Rockets - ???](https://www.html5rocks.com/en/tutorials/websockets/basics/)
-* Service Worker
+* **Service Worker**
 * [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
 *
