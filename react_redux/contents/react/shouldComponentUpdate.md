@@ -1,0 +1,1 @@
+If your parent component do not pass any new props to child, the shouldComponentUpdate function of child will not be triggered. So in every re-render of parent component, the child component will definitely re-render.
