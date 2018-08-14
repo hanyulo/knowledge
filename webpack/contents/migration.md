@@ -30,6 +30,7 @@
 
 ## Migration Guide
 * https://github.com/webpack/webpack.js.org/issues/1706
+* [official](https://webpack.js.org/migrate/3/)
 
 # Webpack 5
 
