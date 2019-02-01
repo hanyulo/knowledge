@@ -1,3 +1,11 @@
+# Webpack 2
+
+## Benefit
+1. use import and export directly rather then using babel
+2. Tree Shaking
+3. performance budgets
+4.
+
 
 # Webpack 4 Migration
 
