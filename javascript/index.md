@@ -1,4 +1,6 @@
 # Javascript
+* [Javascript Master](https://medium.freecodecamp.org/how-to-build-reliable-objects-with-factory-functions-in-javascript-9ec1c089ea6f)
+
 
 
 ## Index of Contents

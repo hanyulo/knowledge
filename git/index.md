@@ -6,6 +6,7 @@
 * [Merge VS Rebasing](./contents/merge_vs_rebase.md)
 * [Simple Command](./contents/command.md)
 * [Undoing Changes](./contents/undoing_changes.md)
+* [Correct git cooperation work flow](./workflow/index.md)
 
 ## To Read
 * Tag part of github code.
