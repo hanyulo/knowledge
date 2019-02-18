@@ -28,6 +28,7 @@ Use hash set so you can store object in redis directly.
 ## References
 * [Antirez Weblog](http://oldblog.antirez.com/post/redis-weekly-update-1.html)
 * [Youtube](https://www.youtube.com/watch?v=33N1mgiRYK0)
+* [Redis + Server-sent events](https://www.tpeczek.com/2017/09/server-sent-events-or-websockets.html)
 
 ## To Read
 * Subscriber/Publisher/Channel of Redis
