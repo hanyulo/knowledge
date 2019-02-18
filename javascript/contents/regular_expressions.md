@@ -51,3 +51,4 @@ let result = pwRegex.test(sampleWord);
 
 ## References
 [freeCodeCamp](https://learn.freecodecamp.org/)
+[Github](https://github.com/ziishaned/learn-regex)
