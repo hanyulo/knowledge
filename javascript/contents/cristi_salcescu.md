@@ -5,9 +5,8 @@
 
 * [Why you should give the closure another chance](https://medium.freecodecamp.org/why-you-should-give-the-closure-function-another-chance-31253e44cfa0)
 
-
+* [How to use Decorators with Factory Functions](https://medium.freecodecamp.org/how-to-use-decorators-with-factory-functions-373fb972b6d4)
 
 ## To Read
-1. https://medium.freecodecamp.org/how-to-use-decorators-with-factory-functions-373fb972b6d4
 2. https://medium.freecodecamp.org/here-are-a-few-function-decorators-you-can-write-from-scratch-488549fe8f86
 3. https://medium.com/javascript-scene/top-javascript-frameworks-and-topics-to-learn-in-2019-b4142f38df20

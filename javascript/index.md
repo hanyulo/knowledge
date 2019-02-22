@@ -1,7 +1,8 @@
 # Javascript
 * [Javascript Master](https://medium.freecodecamp.org/how-to-build-reliable-objects-with-factory-functions-in-javascript-9ec1c089ea6f)
 
-
+## Read
+* [Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
 ## Index of Contents
 * [Implement Lodash Get](./contents/lodash_get.md)
@@ -14,3 +15,5 @@
 
 ## To Read
 [What is functional Programming](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
+[argumetns](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/arguments#Browser_compatibility)
+[iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator)
