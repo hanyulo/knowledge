@@ -8,6 +8,8 @@
 * Each layers do not care about how other layers work.
 * Each layer has well defined API to communicate the layer beneath them.
 
+<img src="../assets/4_layer_internet_model.png" />
+
 
 ### Link
 * __Delivers data over a single link between an end host and router, or between routers__
