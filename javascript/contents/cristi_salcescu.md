@@ -7,6 +7,8 @@
 
 * [How to use Decorators with Factory Functions](https://medium.freecodecamp.org/how-to-use-decorators-with-factory-functions-373fb972b6d4)
 
+* [Decorators](https://medium.freecodecamp.org/here-are-a-few-function-decorators-you-can-write-from-scratch-488549fe8f86)
+
 ## To Read
-2. https://medium.freecodecamp.org/here-are-a-few-function-decorators-you-can-write-from-scratch-488549fe8f86
-3. https://medium.com/javascript-scene/top-javascript-frameworks-and-topics-to-learn-in-2019-b4142f38df20
+1. https://medium.com/javascript-scene/top-javascript-frameworks-and-topics-to-learn-in-2019-b4142f38df20
+2. https://medium.freecodecamp.org/discover-functional-programming-in-javascript-with-this-thorough-introduction-a2ad9af2d645
