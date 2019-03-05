@@ -46,6 +46,8 @@
   * click it to see the corresponded hexadecimal data in the data segment.
   * 587 -> 0x024b in big endian
 
+<img src="../assets/packet_format.png" />
+
 
 ## Quiz
 * The layout of a character string in memory is the same on big-endian and little-endian architectures -> true.
