@@ -55,6 +55,8 @@
 
 ## Docker Container
 
+<img width="50%" src="./assets/docker_diagram.png" />
+
 ### Compare to VM
 <img width="50%" src="./assets/container_diagram.png" />
 * Like VM
@@ -120,7 +122,7 @@
 
 ## File System
   * Different ways of organizing and storing files on a hard drive, flash drive, or any other storage device
-  * 
+  *
 
 ## To Read
  * What is file system
