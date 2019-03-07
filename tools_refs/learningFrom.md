@@ -16,6 +16,7 @@
 * [Clean Code - Robert C. Martin](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 * [Douglas Crockford](http://crockford.com/javascript/)
 * [Cristi Salescu](https://medium.freecodecamp.org/@cristisalcescu)
+* [Eric Elliott](https://medium.com/@_ericelliott)
 
 
 ## Web Development
