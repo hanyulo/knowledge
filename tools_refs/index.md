@@ -23,12 +23,15 @@
   * typescript -> angular (community)
   * flow -> react (1. integrate with babel easily and other related package)
   * [how to choose](https://mariusschulz.com/blog/typescript-vs-flow)
+* [New Proposal To ECMA](https://tc39.github.io/ecma262/)
+* [Javascript Spec](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
 ### Can I use ?
 * [Can I Use - CSS](https://caniuse.com/#search=mask)
 * [Service Worker](https://jakearchibald.github.io/isserviceworkerready/)
  * [Inspect Service Worker](chrome://inspect/#service-workers)
 * [Email Development](https://www.campaignmonitor.com/css/positioning-display/object-fit/)
+* [Current Javascript](https://kangax.github.io/compat-table/es6/)
 
 ### Markdown
 * [Markdown CheetSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
