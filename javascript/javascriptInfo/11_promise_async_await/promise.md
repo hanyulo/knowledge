@@ -72,4 +72,12 @@ let promise = new Promise(executor);
 
 ### Finally
   * has no arguments
-  * 
+
+## Comparison
+* Callback
+  * has pyramid doom.
+  * can just have on callback function.
+
+* Promise
+  * solve pyramid doom
+  * chain: process data multiple times with different function.
