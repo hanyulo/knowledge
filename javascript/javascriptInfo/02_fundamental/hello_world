@@ -1,0 +1,27 @@
+## script tag
+* no need type and language attribute anymore
+
+
+```js
+
+// an ancient way to hid javascript code form old browsers that didn't know how to process the script tag
+
+<script type="text/javascript"><!--
+    ...
+//--></script>
+
+```
+
+* If src is set, the script content is ignored.
+
+## External Scripts
+* Benefits
+  * cache
+  * other page that reference the same script will take it from cache instead of downloading
+  * reduces traffic and make page faster
+* Only simple code put into script tag in html
+
+## Summary
+* We can use a <script> tag to add JavaScript code to a page.
+* The type and language attributes are not required.
+* A script in an external file can be inserted with <script src="path/to/script.js"></script>.
