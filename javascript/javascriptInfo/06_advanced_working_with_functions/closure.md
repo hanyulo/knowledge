@@ -2,7 +2,7 @@
 * Who kind of conditions, create such object
   1. running function: function() {}
   2. whole script (Global Lexical Environment)
-  3. code block
+  3. run a code block { ... }
 
 * Properties of Lexical Environment Object
   1. Environment Record:
@@ -142,3 +142,150 @@ alert( counter() ); // 2
   * Exception: new Function('a', 'b', 'return a + b')
   * [[Environment]]
   * Lexical Environment
+
+
+## Code Block
+
+### if
+<img src="./assets/lexical_environment_if.png">
+
+### For While
+
+```js
+for (let i = 0; i < 10; i++) {
+  // Each loop has its own Lexical Environment
+  // {i: value}
+}
+
+alert(i); // Error, no such variable
+```
+
+### Code Blocks
+* a “bare” code block {…} to isolate variables into a “local scope”.
+* { } create a local lexical environment
+```js
+{
+  // do some job with local variables that should not be seen outside
+
+  let message = "Hello";
+
+  alert(message); // Hello
+}
+
+alert(message); // Error: message is not defined
+```
+
+## Immediately-Invoked Function Expression (IIFE)
+* block-level lexical environment
+```js
+(function() {
+
+  let message = "Hello";
+
+  alert(message); // Hello
+
+})();
+
+```
+
+## Garbage Collection
+* Lexical Environment is cleaned up and deleted after the function run
+
+```js
+function f() {
+  let value1 = 123;
+  let value2 = 456;
+}
+
+f();
+
+```
+
+* But if there’s a nested function that is still reachable after the end of f, then its [[Environment]] reference keeps the outer lexical environment alive as well:
+ * [local le g] -> [local lexical environment - f] -> [global lexical environment - f] -> null
+ * g's [[Environment]] references to f's local LE
+
+```js
+function f() {
+let value = 123;
+
+function g() { alert(value); }
+
+return g;
+}
+
+let g = f(); // g is reachable, and keeps the outer lexical environment in memory
+```
+
+* Called Multiple times
+
+```js
+
+function f() {
+  let value = Math.random();
+
+  return function() { alert(value); };
+}
+
+// 3 functions in array, every one of them links to Lexical Environment
+// from the corresponding f() run
+//         LE   LE   LE
+let arr = [f(), f(), f()];
+```
+## if the lexical environment is unreachable, it will be deleted.
+
+```js
+function f() {
+  let value = 123;
+
+  function g() { alert(value); }
+
+  return g;
+}
+
+let g = f(); // while g is alive
+// there corresponding Lexical Environment lives
+
+g = null; // ...and now the memory is cleaned up
+```
+
+## Real-life optimizations (Weird Experience in Debugging mode)
+* In theory, as long as we have variable that references to the function. The correspondent lexical environment will be alive.
+* In reality, javascript engines will analyze (private) variable usage and if it's not used, the lexical environment will be deleted.
+  * Example: chrome debugger can not access the variable that is not in the local scope.
+
+```js
+
+function f() {
+  let value = Math.random();
+
+  function g() {
+    debugger; // in console: type alert( value ); No such variable!
+  }
+
+  return g;
+}
+
+let g = f();
+g();
+
+```
+
+* The funny debugging issue.
+
+```js
+let value = "Surprise!";
+
+function f() {
+  let value = "the closest value";
+
+  function g() {
+    debugger; // in console: type alert( value ); Surprise!
+  }
+
+  return g;
+}
+
+let g = f();
+g();
+```
