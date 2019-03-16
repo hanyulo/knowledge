@@ -65,6 +65,9 @@
 [Atom Shortcut](https://blog.bugsnag.com/atom-editor-cheat-sheet/)
 
 
+## Error Handling
+[Errorception](https://errorception.com/)
+[Muscula](http://www.muscula.com/)
 ## Interview
 * [Euler](https://projecteuler.net/archives)
 * [Leetcode]

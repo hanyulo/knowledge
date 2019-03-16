@@ -4,7 +4,8 @@
   "description": "my personal note for web development",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./javascript/code/mocha_test.js"
+    "test": "mocha ./javascript/code/mocha_test.js",
+    "tmp": "node ./javascript/code/test.js"
   },
   "repository": {
     "type": "git",
