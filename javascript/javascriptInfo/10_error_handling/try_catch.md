@@ -304,6 +304,8 @@ try {
   * cases:
     1. successful
     2. fail
+* finally run before return or **rethrow** new Error.
+ * check the example on [Task section](https://javascript.info/try-catch)
 
 ```js
 
