@@ -7,6 +7,8 @@
 * promise
   * an object from new Promise constructor
   * links the “producing code” and the “consuming code”
+* executor: callback function for new Promise
+* handler: then, catch
 
 ## Promise
 
