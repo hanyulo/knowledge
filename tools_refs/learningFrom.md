@@ -4,7 +4,6 @@
 
 ## Database
 * [Stanford - Self Paced](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
-*
 
 ## Design Pattern
 * [Addy Osmani](../assets/learning_javascript_Design_patterns.html)
@@ -22,3 +21,6 @@
 ## Web Development
 * [Google](https://developers.google.com/web/)
 * [HTML5 Rocks](https://www.html5rocks.com/en/)
+
+## UX
+[Nielsen Norman Group](https://www.nngroup.com/)
