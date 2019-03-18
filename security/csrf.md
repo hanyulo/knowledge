@@ -48,8 +48,8 @@ http://example.com/transfer?amount=1000000&account=hacker
 ### CSRF Token
 Using CSRF tokens. How do CSRF tokens work?
 
-1. Server sends the client a token.
-2. Client submits a form with the token.
+1. Real bank Server sends the client a complicated token each time the user surf the website.
+2. Client submits a form with the complicated token.
 3. The server rejects the request if the token is invalid.
 
 An attacker would have to somehow get the CSRF token from your site, and they would have to use JavaScript to do so. Thus, if your site does not support CORS, then there's no way for the attacker to get the CSRF token, eliminating the threat.
@@ -84,3 +84,4 @@ Set-Cookie: CookieName=CookieValue; SameSite=Strict;
 [Acunetix](https://www.acunetix.com/websitesecurity/csrf-attacks/)
 [Solution](https://github.com/pillarjs/understanding-csrf)
 [Same site cookies](https://www.netsparker.com/blog/web-security/same-site-cookie-attribute-prevent-cross-site-request-forgery/)
+[CSRF Token](https://stackoverflow.com/questions/5207160/what-is-a-csrf-token-what-is-its-importance-and-how-does-it-work)
