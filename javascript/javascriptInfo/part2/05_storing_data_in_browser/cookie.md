@@ -110,5 +110,74 @@ document.cookie = "user=John; secure";
   * set by https can only access when user use https protocol
 
 ### samesite
-  * a flag that use to prevent XSRF(cross-site-request-frogery)
-  
+  * a flag that use to prevent XSRF (Cross-Site-Forgery-Request)
+
+### What is CSRF/XSRF
+  * user has to maintain login status (possess sessionid in cookie) for specific vulnerable website(bank)
+  * get
+    1. hacker exploit social engineering to send you a fake link.
+    2. user click on malicious link and send a get request to bank to do transaction
+      * https://bacnk.com?transfer=10000&to=hacker
+  * post
+    1. hacker exploit social engineering to send an email to user
+    2. user click on content of email and load the malicious website that served by hacker's server.
+    3. the page load a form automatically and submit the form automatically (post request) to bank website.
+      * now you also make a transaction to transfer money to hacker
+
+    ```html
+
+    <body onload="document.csrf.submit()">
+
+    <form action="http://example.com/transfer" method="POST" name="csrf">
+    	<input type="hidden" name="amount" value="1000000">
+    	<input type="hidden" name="account" value="Fred">
+    </form>
+
+
+    ```
+
+### samesite=strict, samesite without value
+ * cookie will never sent if user comes from outside the site.
+ * only the website which set cookie will send the samesite cookie
+ * only send cookie from the request originated from the website that set the cookie.
+  * on evil page
+    * click on the malicious link will not send the cookie
+    * what if I copy paste the link to browser and surf the website directly ? (transaction make by get request)
+      1. user usually don't do that
+      2. In practice, bank company don't use get request to do transaction.
+ * bad for user experience
+    1. say the website has an endpoint (get request) for user to request and maintain login status and basic account data.
+    2. there is an article about the website and has an external link to the website.
+    3. Say originally, user has login status of the website. But now if user click on the link he will in logout status.
+
+### samesite=lax
+  * forbids the browser to send cookies when coming from outside the site but with an exception
+    * exception
+      1. the http method is safe
+        * The method should only read data rather then modify data. (Get not Post)
+        * [safe methods](https://tools.ietf.org/html/rfc7231#section-4.2.1)
+      2. The operation performs top-level navigation (changes URL in the browser address bar)
+        * iframe is not top-level
+    * good for user experience
+      * same example, as a developer you can create two kind of cookies. loses cookie for get request and strict cookie for post request. Now, those external links can access the website through get request to get some basic data. But those transaction process only can be done by post request and require user to do such request at the website origin.
+
+### Drawback
+  * samesite cookie only support by modern website.
+    * use CSRF token
+
+### httpOnly
+* only server can set it through Set-Cookie
+* forbids any JavaScript access to the cookie.
+  * can not use ```document.cookie```
+  * protect from certain attacks when a hacker injects his own Javascript code into a page and waits for a user to visit that page.
+  * prevent hacker implements XSS
+
+
+## Appendix
+### Third Party Cookie
+* used for tracking and ads services
+* How to do it
+  * 
+
+## References
+[samesite=strict](https://medium.com/compass-security/samesite-cookie-attribute-33b3bfeaeb95)
