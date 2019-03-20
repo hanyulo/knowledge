@@ -16,6 +16,7 @@
 * document.cookie
   * key value pair
   * each cookie is separated by `;`
+  * encodeURIComponent for some characters
 
 ```js
 document.cookie = "user=John"; // update only cookie named 'user'
@@ -176,8 +177,87 @@ document.cookie = "user=John; secure";
 ## Appendix
 ### Third Party Cookie
 * used for tracking and ads services
+* bound to originating domain
+* ads.com can track the same user between different sites,
 * How to do it
-  * 
+  1. a page `site.com` loads an banner from another site: `<img src="https://ads.com/banner.png">`.
+
+  2. ads.com server
+    * set Set-Cookie header
+      * id=1234.
+      * from ads.com domain
+      * only be visible at ads.com:
+
+  <img src="./assets/third_party_cookie_01.png">
+
+  3. user access ads.com
+      * ads.com get the cookie(id=1234).
+      * ads.com recognize the user
+
+  <img src="./assets/third_party_cookie_02.png">
+
+  4. user access other.com which also has `<img src="https://ads.com/banner.png">`
+      * now user sent the cookie to ads.com again
+      * ads.com recognize the user
+
+  <img src="./assets/third_party_cookie_03.png">
+
+#### Privacy Issue
+* chrome: allow to disable third party cookie
+* safari: does not allow third-party cookies at all.
+* firefox: with a “black list” of third-party domains where it blocks third-party cookies
+
+#### Third Party's Script sets cookie
+* the cookie is not third-party cookie
+
+1.  we surf a page `site.com` which load a script from third-part domain
+  * `<script src="https://google-analytics.com/analytics.js">`
+  * script uses document.cookie to set a cookie
+2. the cookie belongs to the domain `site.com`.
+
+### General Data Protection Regulation (GDPR)
+* A regulation in Europe
+
+* Several rules for website to respect user's privacy.
+
+* on rule about cookie
+  * require an explicit permission for tracking cookies from a user
+  * only about tracking/identifying cookies.
+  * the cookies about general information is okay, but if the cookie is about tracking user id or authentication session then it needs user's permission.
+
+* example
+
+
+1. If a website wants to set tracking cookies only for authenticated users.
+  * To do so, the registration form should have a checkbox like “accept the privacy policy”, the user must check it, and then the website is free to set auth cookies.
+
+2. If a website wants to set tracking cookies for everyone.
+  * To do so legally, a website shows a modal “splash screen” for newcomers, and require them to agree for cookies. Then the website can set them and let people see the content. That can be disturbing for new visitors though. No one likes to see “must-click” modal splash screens instead of the content. But GDPR requires an explicit agreement.
+
+
+
+## Summary
+
+
+### document.cookie provides access to cookies
+
+* write operations modify only cookies mentioned in it.
+* name/value must be encoded (encodeURIComponent).
+* one cookie up to 4kb, 20+ cookies per site (depends on a browser).
+
+
+### Cookie options:
+
+* `path=/`, by default current path, makes the cookie visible only under that path.
+* `domain=site.com`, by default a cookie is visible on current domain only, if set explicitly to the domain, makes the cookie visible on subdomains.
+* `expires/max-age` set cookie expiration time, without them the cookie dies when the browser is closed.
+* `secure` makes the cookie HTTPS-only.
+* `samesite` forbids browser to send the cookie with requests coming from outside the site, helps to prevent XSRF attacks.
+
+### Additionally:
+
+* Third-party cookies may be forbidden by the browser, e.g. Safari does that by default.
+* When setting a tracking cookie for EU citizens, GDPR requires to ask for permission.
 
 ## References
 [samesite=strict](https://medium.com/compass-security/samesite-cookie-attribute-33b3bfeaeb95)
