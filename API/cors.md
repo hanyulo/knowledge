@@ -10,6 +10,15 @@
   * how the assets can be accessed.
     * only accept specific methods from external resources.
 
+* Prevent The Result of CSRF
+  * CSRF May still took place
+    * get -> <img >
+    * post -> form
+  * but CORS/Same Origin Policy can prevent the odd domain to read the token.
+  * refs:
+    * [ref-1](https://stackoverflow.com/questions/24687313/what-exactly-does-the-access-control-allow-credentials-header-do#24689738)
+    * must read this!! [ref-2](https://security.stackexchange.com/questions/97825/is-cors-helping-in-anyway-against-cross-site-forgery#97938)
+
 * Headers that are related to CORS
 * Access-Control-*
   * -Allow-Origin
@@ -24,8 +33,17 @@
 
 
 ### Access-Control-Allow-Origin (Server)
-* Should set a list of origin
+* can set a list of origin ??
 * only allow specific origins to access resource of server.
+  * prevent other websites use your data to provide services.
+* browser handle the problem not the server.
+  * say your server set Access-Control-Allow-Origin to true
+  * browser receive response (different domain, compare to the ACAO's domain)
+    * you can see response in chrome network tab
+    * your js code can not access the resource from response
+* only works for browser.
+  * curl, postman can still request the data from server.
+* not about [XSS](https://security.stackexchange.com/questions/108835/how-does-cors-prevent-xss)
 
 ### Access-Control-Allow-Credentials
 
@@ -73,5 +91,7 @@
 
 ## Resources
 * [Understanding Cors - Bartosz Szczeciński - Medium](https://medium.com/@baphemot/understanding-cors-18ad6b478e2b)
+* [ACAO - NON-BROWSER](https://stackoverflow.com/questions/43432743/will-cors-policy-prevent-resource-access-from-non-browser-requests)
+* [CORS-MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials)
 
 * [](https://www.acunetix.com/vulnerabilities/web/insecure-response-with-wildcard-in-access-control-allow-origin/)

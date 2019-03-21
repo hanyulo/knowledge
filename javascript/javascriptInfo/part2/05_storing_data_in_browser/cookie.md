@@ -68,7 +68,7 @@ alert(document.cookie); // ...; %3C%3E=%3D
       ```
 
 ### expires, max-age
-* no expires || max-age
+* no (expires || max-age)
   * browser close => the cookie is gone
   * such cookie called session cookie
 

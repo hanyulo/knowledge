@@ -60,6 +60,7 @@ When user surf on hackers.com and once the page loaded the call back function in
 ```js
 Set-Cookie: CookieName=CookieValue; SameSite=Lax;
 Set-Cookie: CookieName=CookieValue; SameSite=Strict;
+
 ```
 #### Strict
 * When the SameSite attribute is set as Strict, the cookie will not be sent along with requests initiated by third party websites.
@@ -76,7 +77,10 @@ Set-Cookie: CookieName=CookieValue; SameSite=Strict;
  * Since the bank website set SameSite=Lax, the cookie will not be sent or accepted by the bank website since the browser do no do top-level navigation(change url)
  * this can block malicious iframe, img, script tag suceessfully.
 
-
+### CORS
+* Say hacker forge a request set the header withCredential
+  * The server can check the origin first.
+  * the origin is not same as the origin like Access-Control-Allow-Origin -> server do not set the Access-Control-Allow-Credentials -> browser will not send the cookie (in the browser) to the server.
 
 
 
