@@ -25,6 +25,7 @@
   * [how to choose](https://mariusschulz.com/blog/typescript-vs-flow)
 * [New Proposal To ECMA](https://tc39.github.io/ecma262/)
 * [Javascript Spec](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+* [RXJS - Tutorial](https://www.learnrxjs.io/)
 
 ### Can I use ?
 * [Can I Use - CSS](https://caniuse.com/#search=mask)
@@ -38,6 +39,14 @@
 
 ### Protocol
 * [Open Graph](http://ogp.me/)
+* [RFC 7231 - HTTP](https://tools.ietf.org/html/rfc7231#section-4.2.1)
+
+### Testing
+* [OWASP_TEST](https://www.owasp.org/index.php/OWASP_Testing_Project)
+  * xss
+  * csrf
+  * error Handling
+  * ....
 
 ## Performance
 
@@ -80,5 +89,5 @@
 * ngrok
   * change localhost to https
 
-## Protocol
-[RFC 7231 - HTTP](https://tools.ietf.org/html/rfc7231#section-4.2.1)
+## Other
+[reauest_responase_log](chrome://net-export/)
