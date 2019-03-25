@@ -1,6 +1,8 @@
 # Transmission Control Protocol
-* reliable
-* bi-directional byte stream service
+* Feature
+  * reliable
+  * bi-directional byte stream service
+  * in-order
 * protocol for transport layer
 
 
@@ -167,9 +169,60 @@
     * PSH: tells the TCP layer at the other end to deliver the data immediately to application layer upon arrival, rather than wait for more data.
       * This is useful for short segments carrying time critical data, such as a key stroke. We don’t want the TCP layer to wait to accumulate many keystrokes before delivering them to the application.
 
+## The Unique ID of a TCP connection
+  * the connection is identified by five things
+  * Five things create the unique ID
+    * Identify application process on the end host.
+      1. TCP Source port
+      2. TCP Destination port
+    * Identify the end points
+      3. IP Destination Address
+      4. IP Source Address
+    * Identify Connection
+      5. Protocol ID = 'TCP'
+
+  * Valid ID
+    * Host a pick a unique source port ID
+      * We need to make sure it doesn’t accidentally pick the same source port number it is already using with another connection to the same service on Host B.
+      * HOW ?
+        * Increment source port number for every new connection
+        * The field is 16bits, so it takes 64k new connections before the field wraps round
+        * glitch:
+          * if Host A suddenly creates a lot of new connections to Host B it might still wrap around
+          * solution:
+            *  TCP connections initialize with a random initial sequence number to refer to bytes in the byte stream.
 
 
+## Sequence Number (two different initial sequence number)
 
+1. Host A initiates the connection to B
+  * includes the initial sequence number of bytes from A to B.
+2. B replies and initiates the connection from B to A
+  * supply its own initial sequence number for bytes from B to A
+
+
+* Sequence Number exist in first bye of the stream
+* The sequence number:
+  * identifies the byte in the stream of data  from the sending TCP to the receiving TCP that the first byte of data in  this segment represents.
+  * The Acknowledgement number field:
+    * contains the next sequence number that the sender of the acknowledgement expects to receive. This is therefore the sequence number plus 1 of the last successfully received  byte of data.
+    * This field is valid only if the ACK flag is on. Once a connection  is established the Ack flag is always on.
+
+## TCP: Port Demultiplexing (How TCP Port Works)
+* Host A send request
+* Host B provides two services
+  1. web server: port 80
+  2. Mail Server: port ??
+* Steps
+  1. Chrome on Host A request page from Host B
+  2. Host A Send request
+  3. Establish connection through three way hand shake
+  4. Host A generate tcp Segment and put it into IP datagram
+    * with local generated source port
+    * destination port:  official web port: 80
+  5. Host B receive TCP segment
+    * send data to web server based on the destination port(80) of data segment
+    * put the source port in to destination port of response TCP segment
 
 ## References
 [Well-known ports](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports)
