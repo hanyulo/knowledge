@@ -1,3 +1,6 @@
+## Resources
+* [Front-End-Master](https://frontendmasters.com/books/front-end-handbook/2019/)
+
 ## Javascript
 * [The Modern Javascript Tutorial](https://javascript.info/)
 * [Clean Code](https://github.com/ryanmcdermott/clean-code-javascript)
