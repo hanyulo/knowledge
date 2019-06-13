@@ -7,6 +7,9 @@
 
 ## Database
 * [Stanford - Self Paced](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
+* [studyTonight](https://www.studytonight.com/dbms/boyce-codd-normal-form.php)
+* [mysqltutorial - nodejs](http://www.mysqltutorial.org/mysql-nodejs/create-table/)
+* [opentextbc](https://opentextbc.ca/dbdesign01/chapter/chapter-11-functional-dependencies/)
 
 ## Design Pattern
 * [Addy Osmani](../assets/learning_javascript_Design_patterns.html)

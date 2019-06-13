@@ -25,7 +25,7 @@
     * however, if a student has only one swimming hobby, then it's data will be deleted completely
 
 
-## Realtions
+## Relations
 1. Student(SSN, name)
 2. Apply(SSN, cName)
 3. HighSchool(SSN, HS)

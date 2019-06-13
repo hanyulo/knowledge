@@ -12,8 +12,9 @@
     * compositional
       * you can combine second query result with first query result.
     * closuer ??
+      * transitive closure ?
+      * https://www.youtube.com/watch?v=jnw02y63I-o
 
 2. Languages
   1. relational algebra
   2. SQL => semantic language
-  

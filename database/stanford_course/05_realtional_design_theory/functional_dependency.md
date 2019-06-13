@@ -58,7 +58,7 @@
  * if A{}+ is equal to all attributes then A{}+ is the key
  * process
   * pick single attribute from all attributes (R) to determine if it is the key
-  * if the attribute is the key, all superset of the attributes are keys
+  * if the attribute is the key, all supersets of the attribute are keys
 
 ## How to specify functional dependencies for a relation
  *  

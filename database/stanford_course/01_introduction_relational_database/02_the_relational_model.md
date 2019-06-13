@@ -13,7 +13,7 @@
 ### Schema
 * structural description of relations in database.
   1. name of the relation
-  2. attributes of the attributes.
+  2. name of the attributes.
   3. types of those attributes.
 
 ### Instance

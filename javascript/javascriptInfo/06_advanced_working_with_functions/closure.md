@@ -1,5 +1,6 @@
 ## Lexical Environment Object
-* Who kind of conditions, create such object
+* is an invisible internal object
+* What kind of conditions, create such object
   1. running function: function() {}
   2. whole script (Global Lexical Environment)
   3. run a code block { ... }
@@ -16,8 +17,8 @@
 <img src="./assets/lexical_environment_assign_value.png">
 
 ## Tmp Conclusion
-* A variable is a property of a special internal object, associated with the currently executing block/function/script.
-* Working with variables is actually working with the properties of that object.
+* A variable is a property of the special internal object (Lexical Environment Object), associated with the currently executing code block/ invoking function/whole script.
+* Working with variables is actually working with the properties of that object (Lexical Environment Object).
 
 ## Function Declaration
 * function declaration exist in the lexical environment before the execution.
@@ -40,11 +41,15 @@
 
 <img src="./assets/lexical_environment_inner_outer.png">
 
+* if variable is not found
+  * strict mode: throw error
+  * non-strict mode: an assignment to an undefined variable creates a new global variable
 
 ## Caveat
 ### One call – one Lexical Environment
 * invoking a function create a lexical environment
 * invoking same function multiple times, each invocation has its own lexical environment.
+* -> create private variable.
 
 ### Lexical Environment is a specification object
 * we can't get it and manipulate it.
@@ -100,7 +105,7 @@ alert( counter() ); // 2
 
 * the count was found in makeCounter's lexical environment 2
 * the only way to modify variable count is that export another function that modify the variable count in makeCounter's lexical environment.
-* each counter instance/function makes from makeCounter() is independent.
+* each counter instance/function makes from makeCounter() is independent, so each function has unique/private variable (count).
 
 
 ## Environments in Detail (makeCounter)
@@ -289,3 +294,24 @@ function f() {
 let g = f();
 g();
 ```
+
+
+
+```js
+
+function makeCounter() {
+  let count = 0;
+  return function() {
+    let count = 0;
+    return count++;
+  }
+}
+
+
+const counter1 = makeCounter();
+const counter2 = makeCounter();
+
+counter1();
+counter1();
+
+````

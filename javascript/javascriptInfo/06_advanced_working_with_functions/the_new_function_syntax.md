@@ -70,5 +70,7 @@ let func = new Function(arg1, arg2, ..., body);
 ```
 
 
+* we may receive code from a server, or to dynamically compile a function from a template.
+
 * [[Environemnt]] of the syntx references to global lexical environment (works on browser not node.js)
-* Only allow to use variable that pass as arguments explicitly, which save us from unexpected error.
+  * Only allow to use variable that pass as arguments explicitly, which save us from unexpected error.

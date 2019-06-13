@@ -50,7 +50,7 @@ a scheme or structure for a particular database.
 
 ## Advantage over storing data in files
 1. simple model
-2. query with hifh-level language
+2. query with high-level language
 3. efficient implementation
 
 however, now hadoop is an good way to manage data in file system.

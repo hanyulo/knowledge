@@ -38,13 +38,12 @@ function throttle(fn, interval) {
 
 function debounce(fn, interval) {
   let timer;
-  return function decorator() {
+  return function decorator(...args) {
     if (timer) {
       clearTimeout(timer);
     }
-    let args = arguments;
     timer = setTimeout(() => {
-      fn.apply(this, args)
+      return fn.apply(this, args)
     }, interval)
   }
 }
@@ -65,3 +64,30 @@ function main() {
 }
 
 main();
+
+
+
+/* -------- javascript.info -------- */
+
+function work(a, b) {
+  return a + b; // work is an arbitrary function or method
+}
+
+function spy(func) {
+  function decorator(...args) {
+    decorator.calls.push(args);
+    return func.apply(this, args);
+  }
+  decorator.calls = [];
+  return decorator;
+}
+
+const enhancedWork = spy(work);
+console.log(enhancedWork(1, 2)) // 3
+console.log(enhancedWork(4, 5)); // 9
+
+console.log(enhancedWork.calls)
+
+for (let args of enhancedWork.calls) {
+  console.log( 'call:' + args.join() ); // "call:1,2", "call:4,5"
+}
