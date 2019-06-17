@@ -22,7 +22,7 @@ HScode -> HSname, HScity
  * SSN, HScode -> sName, address, GPA priority, HSname, HScity
  * SSM + HScode is key
 2. Decompose
- * So all three FD violate DCNF rules, since they don't have key on left hand side
+ * So all three FD violate BCNF rules, since they don't have key on left hand side
  * rules
   1. pick one functional dependency, put all attributes to one relation
   2. take the rest of attributes plus the left-hand side attribute of the FD and put them as another relation

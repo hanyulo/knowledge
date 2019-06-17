@@ -1,7 +1,8 @@
 # Database
 Database Management System (DBMS)
 * account for standford
-  allen0346@gmail.com
+  * allen0346@gmail.com
+  * La*h****0#
 
 ## Features of database
 1. Massive
