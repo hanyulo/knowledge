@@ -1,6 +1,6 @@
 # F.prototype
 * each function has such property (prototype)
-* it has a default value which is an object
+* it has a default - an object - which has following properties 
   * `{ constructor }`
   * the constructor property references back to the function
 
