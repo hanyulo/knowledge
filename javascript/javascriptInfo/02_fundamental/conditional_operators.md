@@ -19,6 +19,6 @@
 let accessAllowed = (age > 18) ? true : false;
 
 ```
-
+s
 
 * Technically, we can omit the parentheses around age > 18. The question mark operator has a low precedence, so it executes after the comparison >.
