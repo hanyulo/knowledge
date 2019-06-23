@@ -49,3 +49,49 @@ class Menu {
 </script>
 
 ```
+
+## Behavior Pattern
+* Use event delegation to add behaviors to elements declaratively with special attribute
+* benefits:
+  * add any elements that we want to tracked in any place inside html
+* Steps:
+  1. add special attributes to targeted elements.
+  2. make a document-wide handler to handle events that initiated by those elements special attributes.
+
+```html
+
+<div>
+  <div>
+    Counter: <input type='button' value='1' data-counter/>
+  </div>
+  <div>
+    One more counter: <input type='button' value='2' data-counter/>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('click', (e) => {
+      if (e.target.dataset.counter !== undefined) {
+        event.target.value++;
+      }
+  })
+</script>
+
+```
+
+
+## Summary
+
+### Algorithm
+1. put handler on document level
+2. the handler can recognize the elements that it target
+  * data-attribute
+3. handle those events that initiate by targeted element
+
+### Benefit
+* Save memories: no need to add many handlers
+* less code: reduce number of handlers
+* DOM modification: mass add/remove elements
+
+### Downside
+* Increase CPU load

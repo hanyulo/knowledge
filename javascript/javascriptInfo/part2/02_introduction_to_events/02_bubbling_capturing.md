@@ -64,9 +64,13 @@
 * set { capture: true } to capture event.
 
 ```js
-elem.addEventListener(..., {capture: true})
+elem.addEventListener('click', () => {
+
+}, {capture: true})
 // or, just "true" is an alias to {capture: true}
-elem.addEventListener(..., true)
+elem.addEventListener('click', () => {
+
+} ,true)
 
 ```
 
@@ -121,3 +125,9 @@ addEventListener(..., true)
 removeEventListener(..., true)
 
 ```
+
+## For document-level handlers – always addEventListener
+* addEventListener: add new eventHandler to document
+* document.onclick:
+  * first assignemnt: new handler
+  * second assignment: overwrite first handler
