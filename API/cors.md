@@ -8,7 +8,7 @@
 * Server specify
   * who can access its assets
   * how the assets can be accessed.
-    * only accept specific methods from external resources.
+    * only accept specific methods(request types) from external resources.
 
 * Prevent The Result of CSRF
   * CSRF May still took place

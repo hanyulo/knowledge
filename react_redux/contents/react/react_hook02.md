@@ -10,7 +10,7 @@
     1. addEventListener
     2. fetch data from API
 
-3. Class Confusion (I'm no agree)
+3. Class Confusion (I don't understand)
   * Not easy to use
     * confused this
     * bind event handler
