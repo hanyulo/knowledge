@@ -36,7 +36,8 @@
     * DOM manipulation
     * css manipulation
     * animation
-  * modern world:
+  * sovle cross browser issue ???
+  * In modern world:
     * good for support old browser?
 
 ## Modern Web Development

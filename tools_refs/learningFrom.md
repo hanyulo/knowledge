@@ -34,3 +34,9 @@
 ## Books
 * Design Patterns: Elements of Reusable Object-Oriented Software” by E.Gamma, R.Helm, R.Johnson, J.Vissides
 * “Object-Oriented Analysis and Design with Applications” by G.Booch,
+
+
+## Daily
+* freeCodeCamp
+* hacker news
+* hackernoon
