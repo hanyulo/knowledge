@@ -53,6 +53,11 @@
 
 ## Virtual DOM V.S. DOM manipulation
 
+* why we need Virtual DOM
+  * single page app
+    * need to manipulate DOM often.
+
+
 ### DOM Manipulation
 * Update DOM more then we really need
 * example:
@@ -66,7 +71,7 @@
   * lighter then real DOM
     * it dose not has power to directly change what’s on the screen.
 
-*  virtual DOM snapshot
+* virtual DOM snapshot
   * that was taken right before the update.
 
 * Manipulating V DOM is really quick
@@ -77,12 +82,11 @@
   2. react update virtual DOM
   3. diffing
     * react compare virtual DOM with virtual DOM snapshot
-    * find the updated dom node
-    *
-  4. only update the corresponding real dom node
-  5.
+    * find those updated DOM nodes (reconciliation)
+  4. only update the corresponding real DOM node at once (Batch Update)
 
 
 ## Reference
 [jQuery](https://programmingwithmosh.com/javascript/react-vs-jquery-how-they-compare/)
 [DOM Manipulation VS. Virtual Dom Manipulation](https://www.codecademy.com/articles/react-virtual-dom)
+[Batch Update](https://programmingwithmosh.com/react/react-virtual-dom-explained/)

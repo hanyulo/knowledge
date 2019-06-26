@@ -22,6 +22,7 @@
 * [Douglas Crockford](http://crockford.com/javascript/)
 * [Cristi Salescu](https://medium.freecodecamp.org/@cristisalcescu)
 * [Eric Elliott](https://medium.com/@_ericelliott)
+* [Mosh](https://programmingwithmosh.com)
 
 
 ## Web Development
