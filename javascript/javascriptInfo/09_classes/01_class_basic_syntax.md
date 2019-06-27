@@ -3,6 +3,7 @@
 
 ## Basic Syntax
 * No comma between class methods
+* The constructor() method is called automatically by new, so we can initialize the object there.
 
 ```js
 
@@ -26,6 +27,7 @@ console.log(localUser.getName());
 
 ```js
 
+// class declaration
 class User {
   constructor(name) { this.name = name; }
   sayHi() { alert(this.name); }
@@ -47,8 +49,9 @@ alert(typeof User); // function
   }
   ```
 * steps
-  1. create a constructor function: `function User() {}`
-  2. move methods to prototype object of the User constructor
+  1. Creates a function named User, that becomes the result of the class declaration.
+    * The function code is taken from the constructor method (assumed empty if we don’t write such method).
+  2. Stores all methods, such as sayHi, in User.prototype.
 
 <img src="./assets/destructing_class.png" />
 
@@ -205,5 +208,28 @@ user.name // John
 let newUser = new User('Han'); // the name is too short
 
 ```
+* the class declaration creates getters and setters in User.prototype, like this:
 
-* 
+
+```js
+
+Object.defineProperties(User.prototype, {
+  name: {
+    get() {
+      return this._name
+    },
+    set(name) {
+      // ...
+    }
+  }
+});
+
+```
+
+## Public/Private Fields Declaration
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+## References
+[class - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+[class, private/public fields - tylermcginnis](https://tylermcginnis.com/javascript-private-and-public-class-fields/)
