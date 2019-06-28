@@ -26,8 +26,9 @@
 
 
 ## Web Development
-* [Google](https://developers.google.com/web/)
+* [Development Google](https://developers.google.com/web/)
 * [HTML5 Rocks](https://www.html5rocks.com/en/)
+* [SEO Google](https://www.google.com/webmasters/)
 
 ## UX
 [Nielsen Norman Group](https://www.nngroup.com/)

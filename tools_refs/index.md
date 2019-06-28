@@ -25,6 +25,7 @@
   * [how to choose](https://mariusschulz.com/blog/typescript-vs-flow)
 * [New Proposal To ECMA](https://tc39.github.io/ecma262/)
 * [Javascript Spec](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+* [Javascript Spec 2](https://tc39.es/)
 * [RXJS - Tutorial](https://www.learnrxjs.io/)
 
 ### Can I use ?
@@ -96,3 +97,4 @@
 ## MeetUp
 * [Front-End-Taiwan](https://f2e.kktix.cc/)
 * [JSDC](https://www.facebook.com/JSDC.TW/)
+* [JSDC KKTIX](https://jsdc-tw.kktix.cc/)
