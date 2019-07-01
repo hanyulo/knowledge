@@ -38,7 +38,9 @@ var css = require("css!./file.css");
 
 
 ## Loader Order
-* right to left
+* [**right to left**](https://stackoverflow.com/questions/32234329/what-is-the-loader-order-for-webpack)
+  * ['style-loader', 'css-loader']
+    * cssLoader first then styleLoader
 
 
 ## Preferences
