@@ -1,4 +1,5 @@
 ## inline-source-map
+* only for dev mode
 
 * without inline-source-map
   * in default, chrome will show original file with error in console. You click on the error message and go to the file
@@ -18,4 +19,4 @@
   1. change code of a single componet
   2. webpack rebundles -> recompiles
   3. webpack reload **the component of project** and refresh the page on browser.
-  4. browser only reload the component??? 
+  4. browser only reload the component???
