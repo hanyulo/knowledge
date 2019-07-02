@@ -89,3 +89,5 @@ Set-Cookie: CookieName=CookieValue; SameSite=Strict;
 [Solution](https://github.com/pillarjs/understanding-csrf)
 [Same site cookies](https://www.netsparker.com/blog/web-security/same-site-cookie-attribute-prevent-cross-site-request-forgery/)
 [CSRF Token](https://stackoverflow.com/questions/5207160/what-is-a-csrf-token-what-is-its-importance-and-how-does-it-work)
+[Spoofing the ORIGIN](https://stackoverflow.com/questions/21058183/whats-to-stop-malicious-code-from-spoofing-the-origin-header-to-exploit-cors)
+[CSRF - TechBridge](https://blog.techbridge.cc/2017/02/25/csrf-introduction/)
