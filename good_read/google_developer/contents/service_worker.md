@@ -82,6 +82,7 @@ The parent object
 2. indexdb v.s. localstorage
 3. progressive web app
 4. how to use indexed DB
+5. [good article](https://inviqa.com/blog/service-workers-guide-building-offline-web-experiences)
 
 ## References
 [Web Workers](https://www.html5rocks.com/en/tutorials/workers/basics/)
