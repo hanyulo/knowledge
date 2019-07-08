@@ -60,8 +60,8 @@ let rabbit = {
 }
 
 rabbit.sleep();
-rabbit.sleep // true
-animal.sleep // undefined
+rabbit.sleeping // true
+animal.sleeping // undefined
 
 ```
 
