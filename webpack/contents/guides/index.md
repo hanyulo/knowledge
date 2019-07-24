@@ -67,6 +67,10 @@
 
 
 ## Code Splitting
+* split code into various bundles.
+* load bundle on demand or in parallel.
+* form common chunk.
+
 ### Three Main Ways
   * Entry Points: Manually split code using entry configuration.
   * Prevent Duplication: Use the SplitChunksPlugin to dedupe and split chunks.
@@ -77,3 +81,7 @@
     * If there are any duplicated modules between entry chunks they will be included in both bundles.
       * lodash
     * It isn't as flexible and can't be used to dynamically split code with the core application logic.
+
+### SplitChunksPlugin
+  * just like commonChunksPlugin (which is used before) V4
+  * extract dependency of multiple chunks to one chunk.

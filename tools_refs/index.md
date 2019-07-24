@@ -49,6 +49,7 @@
   * csrf
   * error Handling
   * ....
+* [Chrome with Android](chrome://inspect/#devices)
 
 ## Performance
 
@@ -70,6 +71,9 @@
 ### SiteMap
 [Google](https://support.google.com/webmasters/answer/183668?hl=en)
 [Sitrmap.org](https://www.sitemaps.org/protocol.html)
+
+### Network
+[Network Log for Chrome](chrome://net-export)
 
 
 ## Text Editor

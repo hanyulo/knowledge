@@ -40,3 +40,6 @@
 ## Questions
 1. Cancel the async request -> data inconsistent between app and database??
  * No, because the app render different page and if the app go back to the old page, it will fetch the latest data from server.
+
+## References
+* [Netflix](https://www.youtube.com/watch?v=AslncyG8whg) 
