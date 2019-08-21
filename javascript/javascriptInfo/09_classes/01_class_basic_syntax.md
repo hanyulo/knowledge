@@ -1,5 +1,6 @@
 # Class
 * overview: create objects of same kind
+* class is a function
 
 ## Basic Syntax
 * No comma between class methods
