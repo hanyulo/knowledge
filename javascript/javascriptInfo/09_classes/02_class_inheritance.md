@@ -224,13 +224,114 @@ alert(rabbit.earLength); // 10
       1. Labelled with a special internal property [[ConstructorKind]]: "derived"
       2. when a derived constructor runs, it doesn’t create an empty object as "this". It expects the parent constructor to do this job.
 
-## Super: internals, [[HomeObject]]
+## Super: internals mechanism
 
 * Prerequisite
   * Rabbit extends Animal
   * new Rabbit() call methods from Animal
 
 * https://javascript.info/class-inheritance#homeobject
+
+##  [[HomeObject]]
+* Only exist in function based on two conditions
+  * function specified as object method
+  * function specified as class
+* it is not "free"
+  * bind with the function context eternally.
+  * only bind the [[HomeObject]] when super is called, otherwise, the function is still free
+
+*  example
+
+```js
+
+let animal = {
+  name: "Animal",
+  eat() {         // animal.eat.[[HomeObject]] == animal
+    alert(`${this.name} eats.`);
+  }
+};
+
+let rabbit = {
+  __proto__: animal,
+  name: "Rabbit",
+  eat() {         // rabbit.eat.[[HomeObject]] == rabbit
+    super.eat();
+  }
+};
+
+let longEar = {
+  __proto__: rabbit,
+  name: "Long Ear",
+  eat() {         // longEar.eat.[[HomeObject]] == longEar
+    super.eat();
+  }
+};
+
+// works correctly
+longEar.eat();  // Long Ear eats.
+
+
+```
+* Caveat Example
+
+```js
+
+
+let animal = {
+  sayHi() {
+    console.log(`I'm an animal`);
+  }
+};
+
+// rabbit inherits from animal
+let rabbit = {
+  __proto__: animal,
+  sayHi() {
+    super.sayHi();
+  }
+};
+
+let plant = {
+  sayHi() {
+    console.log("I'm a plant");
+  }
+};
+
+// tree inherits from plant
+let tree = {
+  __proto__: plant,
+  sayHi: rabbit.sayHi // (*)
+};
+
+tree.sayHi();  // I'm an animal (?!?)
+
+```
+
+### Methods V.S. Function Properties
+* function properties has no [[HomeObject]]
+
+
+```js
+
+let animal = {
+  eat: function() { // should be the short syntax: eat() {...}
+    // ...
+  }
+};
+
+let rabbit = {
+  __proto__: animal,
+  eat: function() {
+    super.eat();
+  }
+};
+
+rabbit.eat();  // Error calling super (because there's no [[HomeObject]])
+
+```
+
+
+
 
 ## Critical Example
 * https://javascript.info/class-inheritance#class-extends-object
