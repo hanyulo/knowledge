@@ -85,3 +85,6 @@
 ### SplitChunksPlugin
   * just like commonChunksPlugin (which is used before) V4
   * extract dependency of multiple chunks to one chunk.
+
+### Dynamic Import
+* only load the file that you want at run time 
