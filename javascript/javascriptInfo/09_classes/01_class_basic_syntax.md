@@ -1,6 +1,7 @@
 # Class
 * overview: create objects of same kind
 * class is a function
+* instance has constructor property which points back to class/constructor function.
 
 ## Basic Syntax
 * No comma between class methods
@@ -230,6 +231,10 @@ Object.defineProperties(User.prototype, {
 ## Public/Private Fields Declaration
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+## Preview Conclusion
+* class 'xyz' methods/properties are methods of xyz.prototype object
+* static methods/properties are fields of xyz function.
 
 ## References
 [class - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
