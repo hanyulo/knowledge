@@ -98,6 +98,10 @@
 ## Other
 [reauest_responase_log](chrome://net-export/)
 
+## Trending
+* [Stack Overflow Survey](https://insights.stackoverflow.com/survey/2019/#most-loved-dreaded-and-wanted)
+* [Javascript Ecosystem Statistic](https://2018.stateofjs.com/introduction/)
+
 ## MeetUp
 * [Front-End-Taiwan](https://f2e.kktix.cc/)
 * [JSDC](https://www.facebook.com/JSDC.TW/)
