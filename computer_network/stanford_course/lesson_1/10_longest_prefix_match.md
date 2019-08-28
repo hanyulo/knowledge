@@ -3,7 +3,7 @@
 
 
 ## How Forwarding Table Work
-*. 216.xxxx
+* 216.xxxx
   * x stands for wildcard.
 * Router match packet destination address with forwarding table. To find the specific matched link.
 * The default route is effectively all wildcards
