@@ -5,6 +5,11 @@
     2. higher order components
     3. render props
 
+  ## Problems that Hook Solve
+  * syntax pyramid from render props
+  * false hierarchy caused by render props
+  *
+
 
 ## Mouse Monitor Code Example
 
