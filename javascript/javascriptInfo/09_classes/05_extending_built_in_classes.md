@@ -7,6 +7,7 @@
 * a extends b
   * a inherited from b
   * a is inheritor
+  * inherited b 
 
 ## Build-in methods
 * `arr.consturtor === PowerArray`

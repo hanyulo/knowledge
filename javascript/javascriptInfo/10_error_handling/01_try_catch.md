@@ -391,3 +391,6 @@ window.onerror = function(message, url, line, col, error) {
 </script>
 
 ```
+
+## [example](http://javascript.info/try-catch#finally-or-just-the-code)
+* need to check this out to understand the merit of finally.
