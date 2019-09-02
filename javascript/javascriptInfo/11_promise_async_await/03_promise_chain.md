@@ -19,7 +19,7 @@ new Promise((resolve, reject) => {
 })
 
 ```
-* promise.then return a promise object.
+* **promise.then return a promise object.**
 * then the promise resolve with the value that you just returned.
 
 ## Multiple Handlers for one single Promise
@@ -102,3 +102,7 @@ class MyThenable {
 
 ## Summary
 * If .then (or catch/finally, doesn’t matter) handler returns a promise, the rest of the chain waits until it settles. When it does, its result (or error) is passed further.
+
+
+## Check the Example
+* http://javascript.info/promise-chaining#promise-then-versus-catch

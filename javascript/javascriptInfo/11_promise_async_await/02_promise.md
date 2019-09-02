@@ -72,8 +72,11 @@ let promise = new Promise(executor);
 ### catch
   * .catch(f) is a complete analog of .then(null, f), it’s just a shorthand.
 
-### Finally
+### finally
   * has no arguments
+  * runs when the promise is settled, doesn't matter successfully or not.
+  * perform “general” finalizing procedures.
+  * finally pass anything(result, err) to next handler.
 
 ## Comparison
 * Callback
@@ -83,3 +86,17 @@ let promise = new Promise(executor);
 * Promise
   * solve pyramid doom
   * chain: process data multiple times with different function.
+
+
+
+## MyQuickNote
+* if the error is handled by a then, the error will not be passed on to the next then or catch handler.
+* if there is any error in the middle of chaining-then, the next/closest error handler will handle the error. Therefore, the rest of the error handlers will not be invoked.
+* if there is no error occurs, all chained then will be invoked
+* if the current then do not return anything, the next then will receive undefined.
+* finally no need to return anything, the next handler will still get what it needs.
+
+## Promise V.S Callback
+* promise has better flow and flexibility.
+  * multiple then V.S. single callback
+  * multiple callbacks can cause pyramid of doom.
