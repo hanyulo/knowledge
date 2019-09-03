@@ -103,6 +103,8 @@ class MyThenable {
 ## Summary
 * If .then (or catch/finally, doesn’t matter) handler returns a promise, the rest of the chain waits until it settles. When it does, its result (or error) is passed further.
 
+<img src="./assets/promise_state_overview.png">
+
 
 ## Check the Example
 * http://javascript.info/promise-chaining#promise-then-versus-catch

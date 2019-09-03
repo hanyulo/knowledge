@@ -90,7 +90,7 @@ let promise = new Promise(executor);
 
 
 ## MyQuickNote
-* if the error is handled by a then, the error will not be passed on to the next then or catch handler.
+* if the error is handled by a then, the error will not be passed on to the next error handler of then or catch handler.
 * if there is any error in the middle of chaining-then, the next/closest error handler will handle the error. Therefore, the rest of the error handlers will not be invoked.
 * if there is no error occurs, all chained then will be invoked
 * if the current then do not return anything, the next then will receive undefined.

@@ -1,5 +1,5 @@
 ## Overview
- * Put catch in the end of chain to catch all errors
+ * Put catch in the end of chain to catch any errors
 
 ## Implicit try...catch
 * promise executor and promise handlers has invisible try...catch around it.
@@ -250,3 +250,47 @@ demoGithubUser();
 // There’s a little browser trick (*) with returning a zero-timeout promise from finally. That’s because some browsers (like Chrome) need “a bit time” outside promise handlers to paint document changes. So it ensures that the indication is visually stopped before going further on the chain.
 
 ```
+
+## Unhandled Rejection
+* try...catch do not handle the error
+  * the script will crash
+* in browser there is an handler called `unhandledrejection` to handle exception
+
+```js
+
+window.addEventListener('unhandledrejection', function(event) {
+  // the event object has two special properties:
+  alert(event.promise); // [object Promise] - the promise that generated the error
+  alert(event.reason); // Error: Whoops! - the unhandled error object
+});
+
+new Promise(function() {
+  throw new Error("Whoops!");
+}); // no catch to handle the error
+
+
+
+```
+
+## Examples
+
+```js
+
+new Promise(function(resolve, reject) {
+  setTimeout(() => {
+    throw new Error("Whoops!");
+  }, 1000);
+}).catch(alert);
+
+```
+
+* Will not work
+  * As said in the chapter, there’s an "implicit try..catch" around the function code. So all synchronous errors are handled.
+  * But here the error is generated not while the executor is running, but later. So the promise can’t handle it.
+
+## Conclusion
+* reject === implementing try catch implicitly
+* catch error, later then(resolved) handler will still be invoked.
+  * then (reject) will not be triggered && next catch handler will not be triggered too/
+* rethrow error
+  * throw error to next catch and pass all intermediate thens
