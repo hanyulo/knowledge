@@ -14,6 +14,7 @@
   * Cat5 is obsolete
     * it has crosstalk problem
     * Crosstalk is when an electrical pulse on one wire is accidentally detected on another wire.
+      * electromagnetic interference
   * Cat5e reduce crosstalk, so reduce the amount of number of re-transmitting data.
   * Cat6
     * benefits
