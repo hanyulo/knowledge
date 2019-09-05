@@ -32,10 +32,10 @@
   * This contains all of the data from higher layers such as the IP, transport and application layers.
 * Frame Check Sequence
   * a 4-byte or 32-bit number that represents a checksum value for the entire frame.
-  * is calculated by performing what's known as a cyclical redundancy check (CRC) against the frame
+  * is calculated by performing what's known as a **cyclical redundancy check (CRC)** against the frame
   * important concept for data integrity
   * Anytime you perform a CRC against a set of data, you should end up with the same checksum number.
-  * make sure the receiver receive incourrpted data.
+  * make sure the receiver receive correct and intact data.
   * step by step
     1. a device ready to send data
     2. collect all information (assembled data)
@@ -60,7 +60,7 @@
 
 ## Checksum
 * if the checksum sequence is not consistent between sender and receiver, the data should be dropped.
-* ethernet only report on data integrity, other network layers will decide if the data should be re-transmitted. 
+* ethernet only report on data integrity, other network layers will decide if the data should be re-transmitted.
 
 
 

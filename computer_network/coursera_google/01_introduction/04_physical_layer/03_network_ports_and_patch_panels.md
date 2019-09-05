@@ -27,6 +27,9 @@
 
 
 ## Patch Panel
+
+<img src="../assets/patch_panel.png">
+
 * Patch panel is a device containing many net ports but it does no other work.
 * a container for the endpoints of many runs of cable
 * Additional cables are then generally ran from a patch panel to switches or routers to provide network access to the computers at the other end of those links
