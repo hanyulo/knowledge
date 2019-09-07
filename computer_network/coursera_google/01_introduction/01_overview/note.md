@@ -8,3 +8,7 @@
 * Computer Networking
   * Computer networking is the name we've given to the full scope of how computers communicate with each other. Networking involves ensuring that computers can hear each other,
   * Networking involves ensuring that computers can hear each other, that they speak protocols other computers can understand, that they repeat messages not fully delivered
+
+
+
+  <img src="../assets/device_with_5_different_layers.png">

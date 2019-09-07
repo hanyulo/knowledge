@@ -28,7 +28,7 @@
 * is a globally unique identifier attached to an individual network interface
 * a 48-bit number normally represented by six groupings of two hexadecimal(16) numbers.
  * Another way to reference each group of numbers in a MAC address is an octet.
- * XXXX (1 octet), XX  (1 hexadecimal) -> 6 * (7446) || 6 * (ff)
+ * xxxx xxxx (1 octet, 8 bits with binary), XX  (2 bit in hexadecimal) -> 3 * (1001 0010) || 6 * (ff)
 *  total number of a possible MAC addresses that could exist is 2^48 or 281,474,976,710,656 unique possibilities.
 * has two section
   * Organizationally Unique Identifier (OUI) section
