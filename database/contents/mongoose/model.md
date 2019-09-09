@@ -25,6 +25,9 @@ var Tank = mongoose.model('Tank', schema);
 
 ## Constructing Document
 
+## Document
+  * each document has an unique id -> `_id`
+
 
 
 ## References
