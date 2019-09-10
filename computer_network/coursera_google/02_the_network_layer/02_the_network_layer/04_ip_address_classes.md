@@ -5,6 +5,7 @@
   * two sections
     * network ID
       * first octet of IP Address
+      * all devices on same network segment having smae network ID
     * host ID
       * second, third and fourth octets
   * Example

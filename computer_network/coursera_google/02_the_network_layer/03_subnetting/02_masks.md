@@ -33,7 +33,7 @@
   * The purpose of the mask or the part that's all ones is to tell a router what part of an IP address is the subnet ID.
 * two sections
   1. The beginning part: 1111....
-    * for subnet ID
+    * for subnet ID (network id)
   2. rest part: 000...
     * for hostID
 
