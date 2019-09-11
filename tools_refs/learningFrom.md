@@ -24,6 +24,8 @@
 * [Cristi Salcescu](https://medium.freecodecamp.org/@cristisalcescu)
 * [Eric Elliott](https://medium.com/@_ericelliott)
 * [Mosh](https://programmingwithmosh.com)
+* [謝宗穎（Silas）]
+* 
 
 
 ## Web Development
@@ -39,7 +41,8 @@
 * “Object-Oriented Analysis and Design with Applications” by G.Booch,
 
 
-## Daily
+## Daily news
 * freeCodeCamp
 * hacker news
 * hackernoon
+* techcrunch
