@@ -79,6 +79,8 @@
 ## Text Editor
 [Atom Shortcut](https://blog.bugsnag.com/atom-editor-cheat-sheet/)
 
+## Programming Language
+[Python](https://www.py4e.com/materials)
 
 ## Error Handling
 [Errorception](https://errorception.com/)
