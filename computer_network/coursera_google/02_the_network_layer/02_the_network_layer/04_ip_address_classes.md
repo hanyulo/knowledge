@@ -5,7 +5,7 @@
   * two sections
     * network ID
       * first octet of IP Address
-      * all devices on same network segment having smae network ID
+      * all devices on same network segment having same network ID
     * host ID
       * second, third and fourth octets
   * Example
@@ -64,7 +64,7 @@
 ## Classless Inter-Domain Routing (CIDR)
   * Replace old Address Class System
   * Rather than have prefixes only of length 8, 16, and 24 bits, CIDR allows prefixes to be any number of bits
-  * /14: mean a netmask of length 16. -> has 2^18 different IP address
+  * /14: mean a netmask of length 14. -> has 2^18 different IP address
   * Address block is a pair: address,count
   * Counts are powers of 2, specify netmask length
   * 171.64.0.0/16 means any address in the range 171.64.0.0 to 171.64.255.255

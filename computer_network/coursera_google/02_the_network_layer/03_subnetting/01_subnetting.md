@@ -6,7 +6,7 @@
 * what is CIDR and how it works
 
 ## Overview
-*  subnetting is the process of taking a large network and splitting it up into many individual smaller subnetworks or subnets.
+* subnetting is the process of taking a large network and splitting it up into many individual smaller subnetworks or subnets.
 * an IT person must know how to do subnetting
 
 
@@ -30,11 +30,11 @@
 
 ### scenario two
 * the HansLab company apply an class B ip address
-  * HansLab's network can connet at most 65,535 devices
+  * HansLab's network can connect at most 65,535 devices
     * downside
-      * HansLab's no need that much host Id which will create tremendous redundent host ip address
+      * HansLab's no need that much host Id which will create tremendous redundant host ip address
       * decrease network efficiency
-  * **class B networkId that issude from supreme organization can not be modified**
+  * **class B networkId that issued from supreme organization can not be modified**
 * solution
   * subnetting
     * use subnet mask to borrow bits from host id to create subentId
@@ -42,7 +42,7 @@
   * Issued Class B IP address to HansLab
     * 1011 1111, 1111 1001, 0000 0000, 0000 0000(191.249.0.0)
   * class B original subnet mask
-    * 11111111 11111111 00000000 00000000(255.255.0.0)
+    * 1111 1111 1111 1111 0000 0000 0000 0000(255.255.0.0)
     * networkId = (191.249.0.0)
   * customized subnet mask
     * 11111111 11111111 11100000 00000000(255.255.224.0)

@@ -62,6 +62,9 @@
   * ARP table entries generally expire after a short amount of time to ensure changes in the network are accounted for.
 
 
+## Broadcast
+* Broadcast is possible also on the underlying data link layer in Ethernet networks. Frames are addressed to reach every computer on a given LAN segment if they are addressed to MAC address FF:FF:FF:FF:FF:FF. Ethernet frames that contain IP broadcast packages are usually sent to this address.
 
 ## References
 * [ARP](https://www.youtube.com/watch?v=xTOyZ6TWQdM)
+* [Broadcast](https://en.wikipedia.org/wiki/Broadcast_address)
