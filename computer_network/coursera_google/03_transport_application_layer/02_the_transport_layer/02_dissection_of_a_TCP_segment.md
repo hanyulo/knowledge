@@ -24,16 +24,20 @@
 * Destination Port
   * port of the service the traffic is intended for
   * data arrive arrive specific IP Address(server), and be directed to specific port for specific program.
+
 <br/>
 <br/>
 <br/>
+
 * Source Port
   * high numbered port chosen from a special section of ports known as ephemeral ports.
   * is required to keep lots of outgoing connections separate
   * source port is needed so that when the web server replies, the computer making the original request can send this data to the program that was actually requesting it.
+
 <br/>
 <br/>
 <br/>
+
 * Sequence Number
   * 32-bit number
   * keep track of where in a sequence of TCP segments this one is expected to be
@@ -43,23 +47,29 @@
   * TCP split up data into many segments
   * The sequence number in a header is used to keep track of which segment out of many this particular segment might be
   * **how does this work exactly ???**
+
 <br/>
 <br/>
 <br/>
+
 * Acknowledgement Number
   * is the number of the next expected segment.
   * In very simple language, a sequence number of one and an acknowledgement number of two could be read as this is segment one, expect segment two next.
   * **how does this work exactly ???**
+
 <br/>
 <br/>
 <br/>
+
 * Data Offset
   * four-bit number
   * indicate how long the TCP header for this segment is.
   * tell the receiving network device understands where the actual data payload begins  
+
 <br/>
 <br/>
 <br/>
+
 * Control Flag
   * six-bit number
   * six different flags
@@ -69,9 +79,11 @@
     4. RST: reset the connection
     5. SYN: used for setting initial sequence number (three way hand shake)
     6. FIN: end the connection
+
 <br/>
 <br/>
 <br/>
+
 * TCP window
   * 16-bit number
   * specifies the range of sequence numbers that might be sent before an acknowledgement is required
@@ -82,28 +94,36 @@
       * The SWIN dictates how much data a TCP sender will be allowed send before it must receive an ACK from the TCP receiver.
     3. Congestion Window (CWIN)
       * The CWIN is a variable that changes dynamically according to the conditions of the network. If data is lost or delivered out-of-order the CWIN is typically reduced.
+
 <br/>
 <br/>
 <br/>
+
 * checksum
   * 16-bit number
   * Once all of this segment has been ingested by a recipient, the checksum is calculated across the entire segment and is compared with the checksum in the header to make sure that there was no data lost or corrupted along the way
+
 <br/>
 <br/>
 <br/>
+
 * Urgent Field
   * rarely used
   * The Urgent pointer field is used in conjunction(and) with one of the TCP control flags to point out particular segments that might be more important than others
   * these 16 bits are used when the URG (control flag) bit has been set, the urgent pointer is used to indicate where the urgent data ends
+
 <br/>
 <br/>
 <br/>
+
 * options
   * rarely used
   * sometimes used for more complicated flow control protocols
+
 <br/>
 <br/>
 <br/>
+
 * padding
   *  just a sequence of zeros to ensure that the data payload section begins at the expected location
 
