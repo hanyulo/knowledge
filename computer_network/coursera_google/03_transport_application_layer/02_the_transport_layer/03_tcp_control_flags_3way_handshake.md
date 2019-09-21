@@ -14,6 +14,7 @@
 ## Control Flags
 #### 6 control flags
 * in the order that they appear in a TCP header
+
 1. URG
   * urgent pointer
   * A value of one here indicates that the segment is considered urgent and that the urgent pointer field has more data about this

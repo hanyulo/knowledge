@@ -2,7 +2,7 @@
 * protocols
   * ethernet
     * use MAC Address
-  * wi-fi
+  * wi-fi (use another protocol)
 
 ## What you have to learn for data link layer
   * mac address

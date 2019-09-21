@@ -13,7 +13,8 @@
 * you can send traffic to any port you want, but you're only going to get a response if a program has opened a socket on that port.
   * port
     * city gate/towers of defensive wall
-    * socket just like personal of city gate or tower (generals and soldiers)
+  * socket
+    * just like personnel of city gate or tower (generals and soldiers)
 
 
 ## TCP Socket States
