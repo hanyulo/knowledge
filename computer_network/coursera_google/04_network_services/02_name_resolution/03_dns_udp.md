@@ -51,6 +51,9 @@
 3. close connection with four-way-hand-shake
 
 
+<img style="margin-top: 10px margin-bottom: 10px" src="./assets/tcp_dns_request.png">
+
+
 ## DNS with UDP (total: 8)
 1. The original computer sends a UDP packet to its local name server on port 53 asking for the IP for food.com, that's one packet
 2. The local name server acts as a recursive server and sends up a UDP packet to the root server
@@ -58,6 +61,9 @@
 4. The recursive name server sends a packet to the TLD server and receives back a response containing the correct authoritative server (total: 5)
 5. recursive name server sends its final request to the authoritative name server which sends a response containing the IP for food.com. (total: 7)
 6. Finally, the local name server responds to the DNS resolver that made the request in the first place with the IP for food.com.  (total: 8 packets)
+
+
+<img style="margin-top: 10px margin-bottom: 10px" src="./assets/udp_dns_request.png">
 
 
 ## Error in UDP process
