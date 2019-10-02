@@ -55,7 +55,7 @@
 
 
 ## Notes
-* A router or a residential gateway can be enabled to act as a DHCP server. Most residential network routers receive a globally unique IP address(static IP) within the ISP network. Within a local network, a DHCP server assigns a local IP(private dynamic IP) address to each device connected to the network.
+* **A router or a residential gateway can be enabled to act as a DHCP server.** Most residential network routers receive a globally unique IP address(static IP) within the ISP network. Within a local network, a DHCP server assigns a local IP(private dynamic IP) address to each device connected to the network.
 
 * Along with things like IP address and primary gateway, you can also use DHCP to assign things like NTP servers. NTP stands for Network Time Protocol, and is used to keep all computers on a network synchronized in time. We'll cover it in more detail in later courses. But for now, it's just worth noting that DHCP can be used for more than just IP, subnet mask, gateway, and DNS server.
 

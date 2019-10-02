@@ -15,7 +15,7 @@
   2. Another popular resource record type
     * **Quad A record** (AAAA - Quad A)
       * just like A record but returns in IPv6 address
-  3. A CNAME record
+  3. A [CNAME record](https://en.wikipedia.org/wiki/CNAME_record)
     * CNAME is shorthand for canonical name
     * is used to redirect traffic from one domain to another.
     * example
