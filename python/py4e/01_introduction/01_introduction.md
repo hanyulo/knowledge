@@ -13,7 +13,7 @@ def       from      nonlocal    while
 ```
 
 
-## Interpreter V.S. Compiler
+## Interpreter vs. Compiler
 * Machine Language
   * CPU can only communicate through machine language
   * `01010101011100000`
