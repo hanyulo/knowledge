@@ -55,5 +55,5 @@
 
 ## References
 [How SSH Works](https://www.youtube.com/watch?v=ORcvSkgdA58)
-[Symmetric V.S. Asymmetric](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
+[Symmetric vs. Asymmetric](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
 [Symmetric, Asymmetric, Hashes](https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process)

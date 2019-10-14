@@ -20,11 +20,11 @@ checkBoxes.forEach(input => input.addEventListener(‘click’, ()=> alert(‘hi
   * solution: addEventListener on ol element, which is event delegation.
   * Internal process: bubble up.
 
-## Bubble Up V.S. Event Capturing
+## Bubble Up vs. Event Capturing
  1. Bubble: bottom-up method.
  2. Capture: Top-down method.
 
 
  ## References
- [Bubble V.S. Capturing](https://www.quirksmode.org/blog/archives/2008/04/delegating_the.html)
+ [Bubble vs. Capturing](https://www.quirksmode.org/blog/archives/2008/04/delegating_the.html)
  [What is Event Delegation](https://medium.com/@bretdoucette/part-4-what-is-event-delegation-in-javascript-f5c8c0de2983)

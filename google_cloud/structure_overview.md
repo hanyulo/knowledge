@@ -12,7 +12,7 @@
 2. Platform as a Service
 3. Infrastructure as a Service
 
-#### Compute Engine V.S. Kubernetes Engine
+#### Compute Engine vs. Kubernetes Engine
 * Compute Engine
   * just infrastructure system which you get an virtual machine
 * Kubernetes Engine
@@ -75,7 +75,7 @@ https://cloud.google.com/nodejs/
 [nodejs google cloud](https://cloud.google.com/nodejs/?authuser=1)
 [Serverless - Amazon](https://aws.amazon.com/lambda/serverless-architectures-learn-more/)
 [Serverless - google](https://cloud.google.com/serverless/)
-[Computer Engine V.S. App Engine](https://stackoverflow.com/questions/22697049/what-is-the-difference-between-google-app-engine-and-google-compute-engine)
+[Computer Engine vs. App Engine](https://stackoverflow.com/questions/22697049/what-is-the-difference-between-google-app-engine-and-google-compute-engine)
 
 
 ## Must Review!!!

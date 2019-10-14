@@ -14,7 +14,7 @@
   * enzyme
 
 
-#### Mocha V.S. Chi
+#### Mocha vs. Chi
 * Mocha and Chai are two JavaScript frameworks commonly used together for unit testing.
 
 * Difference
@@ -92,5 +92,5 @@
 
 ## References
 [codecademy testing into](https://www.codecademy.com/articles/bapi-testing-intro)
-[unit test V.S. integration test](http://www.softwaretestingclass.com/what-is-difference-between-unit-testing-and-integration-testing/)
+[unit test vs. integration test](http://www.softwaretestingclass.com/what-is-difference-between-unit-testing-and-integration-testing/)
 [Unit, Integration, Functional(End to End) (best ref !!!!)](https://codeutopia.net/blog/2015/04/11/what-are-unit-testing-integration-testing-and-functional-testing/)

@@ -79,7 +79,7 @@ The parent object
 ## To Read
 1. couchdb + pouchdb
   [pouchDB example](https://www.sitepoint.com/getting-started-with-pouchdb/)
-2. indexdb v.s. localstorage
+2. indexdb vs. localstorage
 3. progressive web app
 4. how to use indexed DB
 5. [good article](https://inviqa.com/blog/service-workers-guide-building-offline-web-experiences)

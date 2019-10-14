@@ -1,4 +1,4 @@
-## Framework V.S. Library
+## Framework vs. Library
 * Framework
   * full flavor/fledged development environment
   * provide much functionality possible to help with the complete product's lifecycle.
@@ -51,7 +51,7 @@
   * optimization
 
 
-## Virtual DOM V.S. DOM manipulation
+## Virtual DOM vs. DOM manipulation
 
 * why we need Virtual DOM
   * single page app

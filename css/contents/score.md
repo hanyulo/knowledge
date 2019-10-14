@@ -66,5 +66,5 @@ the second one prevails.
 
 ## References
 * [The most important concept to learn](https://www.google.com/url?q=https://medium.com/@ohansemmanuel/the-most-important-css-concept-to-learn-8e929c944a19?source%3Demail-ea20312fd58b-1536794898446-digest.reader------0-38------------------2c7b23a0_ab7e_4e2b_8a5f_c4f7c35880e2-1%26sectionName%3Dtop&source=gmail&ust=1537108313414000&usg=AFQjCNHPNXiBpX4sthnwmpiiQzGqhO_UtA)
-* [Pseudo Elements V.S. Pseudo Classes](https://www.w3schools.com/css/css_pseudo_elements.asp)
+* [Pseudo Elements vs. Pseudo Classes](https://www.w3schools.com/css/css_pseudo_elements.asp)
 * [Selectors References](https://www.w3schools.com/cssref/css_selectors.asp)

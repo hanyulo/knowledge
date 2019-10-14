@@ -3,7 +3,7 @@
 
 ### Questions
 1. what is ssh
-2. RSA V.S. DSA V.S. ECDSA V.S. ED25199
+2. RSA vs. DSA vs. ECDSA vs. ED25199
 
 ### passphrase
 * same as computer loging passsord
