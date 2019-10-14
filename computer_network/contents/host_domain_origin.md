@@ -4,7 +4,7 @@
 
 
 
-## HostName V.S. DomainName
+## HostName vs. DomainName
 
 
 ### HostName
@@ -37,7 +37,7 @@
   * [scheme]://[hostName]:[port]
 
 ## References
-* [hostname V.S. domainname](https://superuser.com/questions/59093/difference-between-host-name-and-domain-name/59094)
+* [hostname vs. domainname](https://superuser.com/questions/59093/difference-between-host-name-and-domain-name/59094)
 * [difference](https://www.webhostingsecretrevealed.net/blog/web-hosting-guides/what-is-the-difference-between-a-domain-and-web-hosting/)
 * [why confusion](https://www.webhostingsecretrevealed.net/blog/web-hosting-guides/what-is-the-difference-between-a-domain-and-web-hosting/)
 *

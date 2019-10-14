@@ -33,7 +33,7 @@
   * **reverse proxy** (load balancing)
     * is a service that might appear to be a single server to external clients, but actually represents many servers living behind it.
     * Much like the concept of DNS Round Robin, this is a form of load balancing
-    * Reverse Proxy Server V.S. Load Balancer
+    * Reverse Proxy Server vs. Load Balancer
       * Reverse Proxy Server is a more general concept
       * load balancer is a specific concept.
     * deal with decryption
@@ -44,5 +44,5 @@
 
 
 ## Refs
-[Reverse Proxy V.S. Load Balancer](https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/)
-[Reverse Proxy V.S. Load Balancer](https://serverfault.com/questions/127021/what-is-the-difference-between-load-balancer-and-reverse-proxy)
+[Reverse Proxy vs. Load Balancer](https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/)
+[Reverse Proxy vs. Load Balancer](https://serverfault.com/questions/127021/what-is-the-difference-between-load-balancer-and-reverse-proxy)

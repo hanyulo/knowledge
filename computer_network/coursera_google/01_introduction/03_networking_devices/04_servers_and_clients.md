@@ -7,7 +7,7 @@
     * router
     * server...
 
-## Client V.S. Server
+## Client vs. Server
 * a node could be client or server
 * a node could be both client and server
 

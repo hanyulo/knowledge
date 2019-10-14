@@ -77,7 +77,7 @@
 
 
 ## References
-* [host_name v.s. sub-domain name](https://superuser.com/questions/887173/what-is-a-hostname-versus-a-computer-name-versus-a-subdomain-versus-www)
+* [host_name vs. sub-domain name](https://superuser.com/questions/887173/what-is-a-hostname-versus-a-computer-name-versus-a-subdomain-versus-www)
 * [hostname](https://en.wikipedia.org/wiki/Hostname)
 * [sub-domain and domain name has same IP address/same host name](https://www.quora.com/Can-a-subdomain-point-to-the-same-IP-as-the-domain)
   * twreporter.org has same ip address as accounts.twreporter.org

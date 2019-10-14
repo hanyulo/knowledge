@@ -26,7 +26,7 @@
     * network administrator(in office, an IT personnel) doesn't have to do repetitive works for setting same stuff.
   * choose IP for your for the machine (employee's computer)
 
-## Static IP V.S. Dynamic IP
+## Static IP vs. Dynamic IP
 * Every computer or any client devices (printer, mobile phone) on local network requires an IP for communications
   * only needs dynamic IP from DHCP (your local router can work as DHCP server)
 * Servers (include  DNS server), network equipment, gateway router on your local network has static IP address

@@ -37,7 +37,7 @@
   * 16-bit number
   *  used to direct traffic to specific services running on a networked computer
 
-## Server V.S. Client
+## Server vs. Client
 * Server
   * has single or multiple programs running on a computer waiting to be asked for data.
 * Client request data from server

@@ -56,7 +56,7 @@
   * single domain has multiple A records
   * a technique that implement multiple A records to balance traffic across multiple IPs.
   * a concept that involves iterating over a list of items one by one in **an orderly fashion**. The hope is that this **ensures a fairly equal balance of each entry** on the list that's selected.
-  * V.S. [google cloud load balancer](https://cloud.google.com/load-balancing/)
+  * vs. [google cloud load balancer](https://cloud.google.com/load-balancing/)
 
 
 #### Example

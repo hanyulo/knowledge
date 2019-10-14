@@ -91,5 +91,5 @@
 
 
 ## References
-[Subnet V.S. Autonomous System](https://www.quora.com/What-is-the-difference-between-an-autonomous-system-and-a-subnet-in-computer-networking)
+[Subnet vs. Autonomous System](https://www.quora.com/What-is-the-difference-between-an-autonomous-system-and-a-subnet-in-computer-networking)
 [cisco - Autonomous System](https://www.cisco.com/c/en/us/about/press/internet-protocol-journal/back-issues/table-contents-12/autonomous-system-numbers.html)
