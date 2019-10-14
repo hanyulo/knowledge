@@ -217,7 +217,7 @@ alert(rabbit.earLength); // 10
 ```
 
 * Explanation
-  * Constructor Function of an inheriting Class V.S. Normal Constructor Function
+  * Constructor Function of an inheriting Class vs. Normal Constructor Function
     - Normal Constructor Function
       * creates an empty object as this and continues with it. (this references to the object)
     - Constructor Function of an Inheriting Class
@@ -307,7 +307,7 @@ tree.sayHi();  // I'm an animal (?!?)
 
 ```
 
-### Methods V.S. Function Properties
+### Methods vs. Function Properties
 * function properties has no [[HomeObject]]
 
 

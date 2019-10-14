@@ -34,7 +34,7 @@
 *  element that caused the event is called a target element, accessible as event.target
   * so the parent handler can get the details about where it actually happens
 
-### this V.S. event.target
+### this vs. event.target
   * event.target: the element that initiate the event
   * this: the current element that is running the handler
    * this === event.currentTarget
@@ -85,7 +85,7 @@ elem.addEventListener('click', () => {
 <img src="./assets/3_phases_event_propagation.png">
 
 
-* Phases V.S. Handling
+* Phases vs. Handling
   * `event.eventPhase`: to know which phase you are in, but usually you already knew.
   1. First Phase -> Capturing
   2. Second Phase -> Capturing + Bubbling

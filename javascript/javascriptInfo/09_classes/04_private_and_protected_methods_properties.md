@@ -2,7 +2,7 @@
 * Internal interface – methods and properties, accessible from other methods of the class, but not from the outside.
 * External interface – methods and properties, accessible also from outside the class.
 
-## Protect V.S. Private Overview
+## Protect vs. Private Overview
 * Protect
   * accessible only from inside the class and those extending it.
   * not implemented by javascript (need babel)

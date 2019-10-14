@@ -98,5 +98,5 @@ let promise = new Promise(executor);
 
 ## Promise V.S Callback
 * promise has better flow and flexibility.
-  * multiple then V.S. single callback
+  * multiple then vs. single callback
   * multiple callbacks can cause pyramid of doom.
