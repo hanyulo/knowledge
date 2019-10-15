@@ -25,6 +25,7 @@
   * Today, most cable operators have tried to upgrade their networks to the point that end users might not always notice the shared bandwidth.
     * But it's also still common to see cable Internet connections slow down during periods of heavy use. Like when lots of people in the same region are using their Internet connection at the same time.
 
+<img src="./assets/shared_bandwidth_vs_dial_up.png">
 
 
 #### CMTS
