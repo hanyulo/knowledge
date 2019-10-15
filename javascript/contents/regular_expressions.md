@@ -11,6 +11,7 @@
  * ```js *: >=0 ```
  * +: >=1
  * ?: the previous element is optional.
+ * `*`: Zero or more times
  * lookahead
   * (?=...): positive lookahead
   * (!=...): negative lookahead
