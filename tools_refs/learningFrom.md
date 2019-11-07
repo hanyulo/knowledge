@@ -25,7 +25,7 @@
 * [Eric Elliott](https://medium.com/@_ericelliott)
 * [Mosh](https://programmingwithmosh.com)
 * [謝宗穎（Silas）]
-* 
+* [Rachel Andrew](https://rachelandrew.co.uk/)
 
 
 ## Web Development
@@ -40,6 +40,8 @@
 * Design Patterns: Elements of Reusable Object-Oriented Software” by E.Gamma, R.Helm, R.Johnson, J.Vissides
 * “Object-Oriented Analysis and Design with Applications” by G.Booch,
 
+## CSS
+* [Grid By Example](https://gridbyexample.com/)
 
 ## Daily news
 * freeCodeCamp

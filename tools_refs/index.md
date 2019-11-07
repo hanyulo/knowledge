@@ -111,8 +111,14 @@
 
 
 ## Jobs
-[h1b salary check](https://h1bdata.info/index.php)
+* [h1b salary check](https://h1bdata.info/index.php)
+* [code/pen](https://codepen.io/jobs/)
+* [stackoverflow]
+* [github]
 
 
 ## Tools
 * [cloudflare](https://www.cloudflare.com/)
+
+## Benchmarks
+* [stefankrause](https://stefankrause.net/js-frameworks-benchmark8/table.html)
