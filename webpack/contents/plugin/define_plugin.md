@@ -27,10 +27,17 @@ plugins: [
 
 ## Why You Need it
 
-Technically, NODE_ENV is a system environment variable that Node.js exposes into running scripts. It is used by convention to determine dev-vs-prod behavior by server tools, build scripts, and client-side libraries. Contrary to expectations, process.env.NODE_ENV is not set to "production" within the build script webpack.config.js, see #2537. Thus, conditionals like process.env.NODE_ENV === 'production' ? '[name].[hash].bundle.js' : '[name].bundle.js' within webpack configurations do not work as expected.
+Technically, NODE_ENV is a system environment variable that Node.js exposes into running scripts. It is used by convention to determine dev-vs-prod behavior by server tools, build scripts, and client-side libraries. Contrary to expectations, process.env.NODE_ENV is not set to "production" within the build script webpack.config.js, see [#2537](https://github.com/webpack/webpack/issues/2537). Thus, conditionals like process.env.NODE_ENV === 'production' ? '[name].[hash].bundle.js' : '[name].bundle.js' within webpack configurations do not work as expected.
 
+
+## Note
+* in webpack 4
+  * set mode in config to 'production'
+    * webapck configures DefinePlugin automatically
+      * process.env.NODE_ENV === 'production'
 
 
 ## References
 [Official](https://webpack.js.org/guides/production/)
 [TwReporter](https://github.com/twreporter/twreporter-react/blob/master/webpack.config.js)
+[define_plugin](https://webpack.js.org/plugins/define-plugin/)
