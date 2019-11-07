@@ -123,3 +123,6 @@ Functional programming favors:
 5. Declarative rather than imperative code (what to do, rather than how to do it)
 6. Expressions over statements
 7. Containers & higher order functions over ad-hoc polymorphism
+
+## Refs
+[Eric Elliot](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
