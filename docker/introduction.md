@@ -124,6 +124,10 @@
   * Different ways of organizing and storing files on a hard drive, flash drive, or any other storage device
   *
 
+
+## Why We Need Docker on google app engine
+* even though app engine is PAAS, we still want to get some degree of ability to customize server env. This is where Docker comes in.
+
 ## To Read
  * What is file system
  * What is union file system
