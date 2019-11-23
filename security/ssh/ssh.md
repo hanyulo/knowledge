@@ -50,7 +50,10 @@
 
 
 ## RSA
-* http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html
+* http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.htmlhow
+
+## Question
+* how to transfer the symmetric key??
 
 
 ## References
