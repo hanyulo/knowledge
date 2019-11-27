@@ -136,8 +136,3 @@ print "</html>"
 
 ## Ref
 [Acunetix - XSS](https://www.acunetix.com/websitesecurity/cross-site-scripting/)
-
-
-## TO READ
-* MDN
-* [BLOG](https://secure.wphackedhelp.com/blog/wordpress-xss-attack/)

@@ -48,12 +48,12 @@
 * [Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
     * how does it work `Authorization: Bearer <token>`
 * [JSON web Token](https://auth0.com/docs/jwt)
-* [JSON Web Token Introduction](https://jwt.io/introduction/)
-    * https://auth0.com/learn/json-web-tokens/
+* https://auth0.com/learn/json-web-tokens/
 * [where to store token](https://auth0.com/docs/security/store-tokens)
 * [Single-Page App Authentication Using Cookies](https://auth0.com/docs/login/spa/authenticate-with-cookies)
 * [security](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/HTML5_Security_Cheat_Sheet.md#local-storage)
 * [json-web-tokens - auth0](https://auth0.com/learn/json-web-tokens/)
+* [various tokens](https://auth0.com/docs/tokens)
 
 * security
     * relationship between XSS && webstorage

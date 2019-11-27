@@ -82,6 +82,8 @@ Set-Cookie: CookieName=CookieValue; SameSite=Strict;
   * The server can check the origin first.
   * the origin is not same as the origin like Access-Control-Allow-Origin -> server do not set the Access-Control-Allow-Credentials -> browser will not send the cookie (in the browser) to the server.
 
+## To Read
+* [computerphile youtube]()
 
 
 ## Refs
