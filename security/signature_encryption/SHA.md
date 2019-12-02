@@ -1,12 +1,16 @@
 # SHA (Secured Hash Algorithm)
 * what for
-    1. message authentication
-    2. verify digital signature (verify identity)
+    * choose symmetric key
+        * data integrity
+        * user authentication
+    * choose asymmetric key
+        * data integrity
+        * user authentication
+        * non-repudiation
+
 * is a type of hash function not an encryption
-    * hash can't be reversed
-* it's a one-way hash function
-
-
+    * one-way hash function
+        * hash can't be reversed
 
 ## Overview
 * SHA1
@@ -73,6 +77,11 @@
     6. if you have no message left, (H0',H1',H2',H3',H4') is the hash!!
 
 
+## RSA v.s SHA1
+* SHA-X
+    * one way compression
+* RSA
+    * asymmetric encryption/decryption
 
 
 ## References

@@ -86,6 +86,7 @@
 * salt
     * random string of characters
     * is different to every single user
+    * such as, public key / private key / shared secret key
 
 * steps
     1. get password
@@ -95,7 +96,14 @@
 * advantage
     * each user has unique hash
 
+* note
+    * hash is one-way function
+    * the only way to reverse it is brute force
+    * the server will not have original password, so if user forget the password he/she can only reset its password
+    * [ref](https://security.stackexchange.com/questions/88725/is-it-possible-to-crack-hash-with-known-salt-if-yes-how)
+
 
 ## Refs
 
 * [hash - Tom Scott - computerphile](https://www.youtube.com/watch?v=b4b8ktEV4Bg)
+* [how not to store password - Tom Scott](https://www.youtube.com/watch?v=8ZtInClXe1Q)

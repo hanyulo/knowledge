@@ -20,9 +20,9 @@
         5. Server send the data (encrypted by `KBS`) to Bob
         6. Bob receives the data and decrypt it by `KBS`
     * benefits
-        * company who host the server can perform some rudimentary check to filter out some malicious messages such as terrorist attack, financial frauds, etc.
+        * company who host the server can perform some rudimentary checks to filter out some malicious messages such as terrorist attack, financial frauds, etc. Then the company can notify government to act.
     * downsides
-        * if the server is hacked, there will be a serious leak problem
+        * if the server is hacked, there will be a serious data leak problem
 
 
 * solution two (end to end encryption)
@@ -31,9 +31,8 @@
         2. Alice and Bob negotiate and exchange a shared-secret-key
             * server do not know what shared-secret-key is
             * server only relay the encrypted-message
-            * shared-secret-key is ephemeral (may be different on each message)
+            * shared-secret-key is ephemeral (different on each message or few messages)
         3. Now they can send and receive the data from each other without any decryption in the server
-    *
 
 
 

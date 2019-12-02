@@ -1,37 +1,11 @@
-# RSA and HMAC
-* for authentication
-    * verify identity of the true sender and receiver
-    * prevent data being modified by hacker
-* not for encryption
-    * prevent data being read by hacker
-
-## Overview
-* signed (encoded) - authentication
-    * data integrity
-        * can only verify the message has not been altered when it went through the untrusted network.
-    * not encrypted
-        * everyone who can tap the network can read the message because the message is not encrypted
-
-* signature just like checksum
-
-* signed algorithm
-    * HMAC - SHA 256
-    * RSA
-
-
-## RSA
-* asymmetric encryption algorithm
-    * anyone with public key can read the private-key-encrypted data
-* the point is that, person who has public key can know that the message is definitely send by the person who possess private key
-
-
-
-
 ## HMAC (keyed-hash message authentication code)
 
 #### Overview
-* is a sophisticated hash function
-    * one way
+* MAC is a methodology
+    * HMAC is a type of MAC
+        * feature: divide the symmetric key to two subkeys
+* MAC and HMAC both need to adopt a specific hash function
+    * the hash function should be **one way compression**
 
 #### History
 
@@ -44,29 +18,34 @@
     * new problem: man in the middle attack
         * man who can flip any bit in hash to create totally wrong message
 
-2. message append with hash
+2. message **append** with hash
     * it is a naive approach
     * `${message}${h(message)}`
     * solved
-        * suppose hacker do not know the hash function, the receiver can know that the message hasn't been tampered with
+        * Data Integrity
+            * suppose hacker do not know the hash function, the receiver can know that the message hasn't been tampered with
     * new problem
         * man in the middle attack
         * man intercept the message and change the message then recompute the hash with the hash function
 
-3. shared keys
+3. Key Hash (MAC) (Shared Secret Key)
+    * names: MAC === Hash(hash result) === tag
     * authentic parties in the transmission have shared secret key
-        * kid of encryption
-    * append the shared key(k) to the message(m)
-    * `${message}${h(k|m)}` solved:
-        * the hacker intercept the message
-        * can't get the shared key to produce the hash so it is better than the #2
+    * append the Hash(MAC) to the message(m)
+    * `${message.h(k|m)}` solved:
+        * User Authentication
+            * the hacker intercept the message
+            * can't get the shared key to produce the hash so it is better than the #2
     * problem:
         * SHA-1: now, hacker may able to resume the initial state which is shared key (a pseudo-random-key-stream)
         * initial state + SHA-1 -> create totally new hash
         * vulnerable to length extension attack
 
-4. HMAC (Hash Message Authentication Code)
+4. HMAC - SHA256 (KeyHash Message Authentication Code - specific hash function)
     * prevent length extension attack
+    * a specific type of MAC
+    * SHA256
+        * **one way compression**
     * two keys
     * how it works
         1. divide the shared secret key to two sub-keys (k1, k2)
@@ -82,17 +61,5 @@
         3. `h(${tmpHash}${k2})`
     * result: the hacker can't derive the shared key
 
-
-## Note
-* authentication
-    * check data is authentic
-* authorization
-    * grant access to user
-
-
-## Question
-* so what about encryption (prevent hacker from reading the data)
-
-## References
+## Refs
 * [HMAC - Michael Pound](https://www.youtube.com/watch?v=wlSG3pEiQdc)
-* [RSA v.s SHA1](https://stackoverflow.com/questions/733692/sha1-vs-rsa-whats-the-difference-between-them)

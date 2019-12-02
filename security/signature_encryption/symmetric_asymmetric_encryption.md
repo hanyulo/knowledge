@@ -1,11 +1,11 @@
 ## Symmetric Encryption
 * two parties have same shared-secret key(SSK) (also called symmetric key)
-* plaintext <-> cihpertext
+* plaintext <-> ciphertext
 * Steps
     * sender:used the SSK to encrypt the message
-        * H(`Hello World!!!` + SSK) -> Hash
+        * Encryption(`Hello World!!!` + SSK) -> cipher text
     * Receiver:
-        * get the Hash and decrypt it with SSK
+        * get the cipher text and decrypt it with SSK
 * Problem
     * to transfer the SSK to each other we need to establish a secured connection
         * but to establish a secured connection we need a SSK
