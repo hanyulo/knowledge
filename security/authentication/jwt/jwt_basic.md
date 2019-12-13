@@ -8,7 +8,6 @@
     2. Public/Private keys pair using RSA (or ECDSA)
 * Signed tokens can verify the integrity of the claims contained within it, while encrypted tokens hide those claims from other parties.
 
-
 ## What is JWT for
 1. Authorization
     * login system
@@ -87,11 +86,98 @@
 
 
 #### Signature
+* issued by my own API Server
+* the app server (client) will not generate any signature
+* algorithm
+    * HMAC - SHA256 with a secret key (not shared)
+    * RSA with (public/private pair)
+* input
+    1. base64url encoded header
+    2. base64url encoded payload
+* example
+```js
+  HMACSHA256(
+  base64UrlEncode(header) + "." +
+  base64UrlEncode(payload),
+  secret)
+```
+* steps
+    1. app request with password(PW) + account name(AN)
+    2. api server receive PW + AN and generate signature with the secret
+    4. api server responses with jwt
+    3. app request again (with jwt) and then the api server will generate the signature again try to match the signature with the signature from app request
+* purpose
+    * data integrity
+    * user authentication (check client's identity) (jwt need to be signed with private key)
+
+
+## JWT
+<img src="./assets/jwt.png" />
+
+## How JWT Works
 *
 
-## To Read/Do
-* [get the handbook](https://auth0.com/resources/ebooks/jwt-handbook)
+## Note
+* typically, JWT is **not encrypted** it just signed
+* authentication (JWT) is subject to MitM attacks  (Man in the Middle)
+    *  These attacks happen when an attacker can VIEW YOUR NETWORK traffic as you make requests over the internet. This is what your ISP can see, the NSA, etc.
+    * solution:
+        * TLS/SSL prevent MitM
+        * OAuth2: TEMPORARY tokens
+
+
+## Questions
+* What is the point that don't store sensitive data in JWT
+    * what is sensitive data ???
+        * my guess: credit card number, social security number ??
+    * my question
+        * if I use the jwt signature to do identification
+            * pass: access data server
+            * fail: deny access
+        * if the hacker get the token, he/she can get whatever he likes -> so it dosen't really matter if I store sensitive data in the JWT right???
+    * My Answer
+        * signature is just like a key. Say, if someone illegally obtain your key, if the antagonist do not know what is the key for (which house, or vault) then it is useless. However, if the antagonist obtain your social security number or credit card number then he can do a lot of harm to you.
+    * To Do
+        * ask the question on stackexchange
+
+## How do JSON Web Tokens work?
+* don't store token in localStorage in browser
+    * you should store jwt in cookie
+        * prevent XSS attack
+    * store jti in localStorage
+    * store CSRF token/id in localStorage
+* Authorization header
+    * communication between authorizatoin-server with following
+        1. resource-server (third-party server)
+        2. mobile app
+    * no CORS issue
+* don't put sensitive data in token
+
+* basic flow
+    * parties
+        1. auth-sever (AS)
+        2. front-end-app (FEA)
+        3. resource-server (RS)
+    * steps
+        1. FEA requests authorization to AS
+            * [ref](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
+        2. AS return accessToken
+        3. FEA requests resource from RS with accessToken
+        4. RS confirm with the auth-server for accessToken
+
+
+## Why should we use JSON Web Tokens?
+* JSON is less verbose and smaller than XML
+* JSON parsers are supported in native javascript language
+* check the website content
+
+## To Read
+* [handbook](https://auth0.com/resources/ebooks/jwt-handbook)
+* [session based -> token based](https://auth0.com/blog/stateless-auth-for-stateful-minds/#Example--Using-Auth0-and-JWTs-for-Authentication-and-Client-Side-Sessions)
 
 
 ## References
+* [intro](https://jwt.io/introduction/)
+* [debugger](https://jwt.io/)
 * [JSON Web Token Introduction](https://jwt.io/introduction/)
+* [what is jwt is stolen](https://stackoverflow.com/questions/34259248/what-if-jwt-is-stolen)

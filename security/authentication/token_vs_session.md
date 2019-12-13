@@ -19,9 +19,11 @@
             * store session in web server (instance)
             * a mechanism that load-balancer will remember to send the rest requests to same instances after the first authorized request
             * *good or bad ??*
-        * database
-            * store session info in database
-            * downside: increase fetching time
+        * global cache server
+            * store session info in global cache database (redis)
+            * downside
+                * increase fetching time
+                * if the database failed, the whole system went down
     * session
         * checked items in cart
         * login time
