@@ -52,6 +52,10 @@
     * escape `"` as `&quot`.
     * use encodeURI function
 
+#### Cookie Protection
+* httpOnlt
+* secure
+
 ## References
 
 
