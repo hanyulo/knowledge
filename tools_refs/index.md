@@ -19,6 +19,7 @@
 
 ### Javascript
 * [Params Meta Syntax](http://usejsdoc.org/tags-param.html)
+* [jsdoc](https://devdocs.io/jsdoc/tags-property)
 * [flow - type check tool](https://flow.org/)
   * typescript -> angular (community)
   * flow -> react (1. integrate with babel easily and other related package)
