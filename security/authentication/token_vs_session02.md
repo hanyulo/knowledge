@@ -1,7 +1,7 @@
 # Important!!!
 
 ## Note
-* we should not compare JTW with cookie, since they are two different things
+* we should not compare JWT with cookie, since they are two different things
 * we can compare sessionId with JWT
 
 ## Benefit of jwt
@@ -34,7 +34,13 @@
     * naming
         * also called authenticity token
         * synchronization pattern
-    * you can store CSRF token in localStorage
+    * you can store CSRF token in localStorage (36:21)
+        1. server set cookie with token (csrf-id is in the token)
+        2. csrfi id in headers of reponse
+        3. user store csrf-id in localStroage
+        4. next reqest
+            1. server verfiy jwt
+            2. get csrf id from decoded info form jwt and comper it with the csrf id in body
 
 #### Overview
 <img src="./assets/jwt_best_practice.png" />

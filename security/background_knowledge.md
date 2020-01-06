@@ -59,13 +59,24 @@
             * downsides
                 * other services such as app can not call the php function
         * result: android app, IOS app, Web app all request data from same RESTful API Server
-* need to be stateless
-* stateless benefit
-    * good for serving millions of users concurrently
-        * because of horizontal scalability
-    * less complex (no need so sync data across different API servers)
-    * **same request will get same result without any side-effects**
-        * easy to cache
+* benefit
+  * stateless
+  * separate the concerns of client and server
+
+
+### Separation
+* good for maintenance
+  * client and server and evolve independently
+* better for scalability
+  * different clients hit the same endpoints for same resource
+
+
+### stateless benefit
+* good for serving millions of users concurrently
+    * because of horizontal scalability
+* less complex (no need so sync data across different API servers)
+* **same request will get same result without any side-effects**
+    * easy to cache
 
 
 ## References

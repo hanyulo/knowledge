@@ -98,7 +98,7 @@
 | Solution for HS | N/A | sticky sessions or store sessionInfo in DB |
 | Security Ability | No difference | Depends on where you store JWT or sesssionId |
 | Request Data Size | big | small |
-| incessant calls | less | more |
+| incessant calls | less | more (use sessionId to request userProfile or tmpItemCarts at server side) |
 
 
 ## Terms

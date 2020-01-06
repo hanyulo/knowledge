@@ -3,7 +3,7 @@
 * an open standard
 * define a **compact && self-contained** way for securely transmitting information between parties as a JSON object
 * the info is signed so it can be verified and trusted
-* encode methods (signed by) **(not encrypted)**
+* signed by (encrypted || compressed)
     1. secret (HMAC algorithm)
     2. Public/Private keys pair using RSA (or ECDSA)
 * Signed tokens can verify the integrity of the claims contained within it, while encrypted tokens hide those claims from other parties.
@@ -145,6 +145,7 @@
     * you should store jwt in cookie
         * prevent XSS attack
     * store jti in localStorage
+        * jti is for blacklist
     * store CSRF token/id in localStorage
 * Authorization header
     * communication between authorizatoin-server with following

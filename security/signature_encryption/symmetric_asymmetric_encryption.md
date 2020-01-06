@@ -61,6 +61,9 @@
           4. UserB decrypt the data' with `PBKA` and get dat
 
 
+### Encryption v.s Signature
+* encrypt with private key -> signature
+* encrypt with public key -> data integration
 
 ## Question
 * how to encrypt message with key
@@ -68,3 +71,4 @@
 
 ## References
 * [Robert Miles - Computerphile](https://www.youtube.com/watch?v=GSIDS_lvRv4)
+* [encryption v.s signature](https://stackoverflow.com/questions/454048/what-is-the-difference-between-encrypting-and-signing-in-asymmetric-encryption)

@@ -3,11 +3,13 @@
   * A programming paradigm
   * Functional code tends to be more concise, more predictable, and easier to test than imperative or object oriented code.
   * Declarative rather than imperative
+  * testable, predictable
 * Principles
   * Pure Function
+  * Function Composition
   * Avoid shared state
   * Avoid mutable data
-  * AVOID side effect
+  * Avoid side effect
   * Application state flow through pure functions
 
 ## Pure Function
@@ -28,7 +30,7 @@ decorator, HOC, _.compose. _.once ....
 * Scope
   * global scope
   * closure scope
-* Thins in shared scope
+* Things in shared scope
   * variable
   * object
   * memory space

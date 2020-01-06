@@ -1,4 +1,29 @@
 
+## Overview
+
+#### Players
+* Alice
+  * secret key (red) (a)
+* Bob
+  * secret key (blue) (b)
+* public
+  1. generator - a random number (yellow) (g)
+  2. big prime number n (no color) (c)
+    * analogy will no need this number, but in mathematics you need this to do modulo computation
+
+
+#### Steps
+1. a + g -> ag (at Alice side)
+2. b + g -> bg (at Bob side)
+  * ag and bg are not reversible for a, b and g
+3. Alice and Bob exchange ag and bg
+  * public knows: g, n, ag, bg but not a and b
+4. Alice: bg + a -> bga - in private mode
+5. Bob: ag + b -> agb - in private mode
+  * agb === bga (shared secret key)
+
+
+
 
 ## References
 * [DM Overview - Michael Pound](https://www.youtube.com/watch?v=NmM9HA2MQGI)
@@ -24,4 +49,3 @@
     * only used for identity authentication
 * Diffie Hellman
     * can be used in every message to generate ephemeral key (shared secret key) for each message
-    

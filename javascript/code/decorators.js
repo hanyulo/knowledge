@@ -28,7 +28,6 @@ function throttle(fn, interval) {
     if (lastExecutedTime) {
       executedInterval = Date.now() - lastExecutedTime;
     }
-    console.log(executedInterval)
     if (!lastExecutedTime || lastExecutedTime && (executedInterval >= interval)) {
       fn.apply(this, arguments);
       lastExecutedTime = Date.now();
