@@ -27,6 +27,10 @@
 * [Mosh](https://programmingwithmosh.com)
 * [謝宗穎（Silas）]
 * [Rachel Andrew](https://rachelandrew.co.uk/)
+* Ilya Kantor
+* Philip Robert
+* Dan Abramov
+
 
 
 ## Web Development
