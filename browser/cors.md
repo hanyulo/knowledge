@@ -87,7 +87,13 @@
   * cookies
   * response body?
 
-
+## Implementation
+* cookie
+    1. handle option request
+    2. Access-Control-Allow-Origin: needs to be specific origin
+    3. Access-Control-Allow-Credentials: true
+    4. prod mode: if secure: true -> sameSite: none
+    5. dev mode (same origin: localhost + http): secure: false, sameSite: lax
 
 ## Resources
 * [Understanding Cors - Bartosz Szczeciński - Medium](https://medium.com/@baphemot/understanding-cors-18ad6b478e2b)

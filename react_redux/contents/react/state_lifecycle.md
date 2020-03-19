@@ -32,7 +32,7 @@
     * used for changing scroll position after load new item in list
 
 
-## Depcrecate
+## Deprecate
 
 * the following methods will be used in some simple case. But using following methods will make your code difficult to understand
     * memoization to replace componentWillReceiveProps

@@ -20,7 +20,7 @@
         2. create computed style
         3. create layout tree
             * time consuming!!!
-            * location
+            * locatio
             * content: "1234"
         4. paint
             * paint order
