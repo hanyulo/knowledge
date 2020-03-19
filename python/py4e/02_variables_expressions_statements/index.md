@@ -57,11 +57,11 @@ def       for       lambda    return    await
 #### Division
 * version difference
 * Python 3.x
-  * `59/60`  // 0.9833333333333333
-  * `59//60` // 0
+  * `59/60`  # 0.9833333333333333
+  * `59//60` # 0
     * divide two integers and truncate the result to an integer
 * Python 2.x
-  * `59/60`  // 0
+  * `59/60`  # 0
     * divide two integers and truncate the result to an integer
 
 
@@ -211,3 +211,10 @@ int(speed)  # get number 17
   * One of the basic units of data, like a number or string, that a program manipulates.
 * variable
   * A name that refers to a value.
+
+
+## Status
+* done
+
+## References
+* https://www.py4e.com/html3/02-variables
