@@ -1,6 +1,21 @@
 ## Progressive Web App
 
+## Overview
+* web app v.s native app
+    * web app: reach
+    * native app: capability
+* pwa: enhance web app in capability
+* Capable
+    * notification
+    * geolocation
+* reliable
+    * off-line experience
+* installable
+    * They're launchable from on the user's home screen, dock, taskbar, or shelf.
 
+## key elements
+* service worker
+* app manifest
 
 
 [Add To Home Screen](https://developers.google.com/web/fundamentals/app-install-banners/)

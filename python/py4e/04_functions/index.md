@@ -7,6 +7,9 @@
     * max('Hello') // o
 * `min()` - string || number
 * `len()`
+* `dir()` - shows the available methods
+* `type()` - shows the type of an object
+* `help()` -help to get some simple documentation on a method
 
 
 ## Type Conversion Function
