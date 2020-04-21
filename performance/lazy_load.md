@@ -1,0 +1,10 @@
+## References
+* https://web.dev/codelab-use-lazysizes-to-lazyload-images/
+* https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video
+* https://developer.mozilla.org/en-US/docs/Glossary/viewport
+* https://developers.google.com/web/updates/2016/04/intersectionobserver
+* https://developers.google.com/web/fundamentals/performance/critical-rendering-path
+* https://www.udacity.com/course/website-performance-optimization--ud884
+* https://developers.google.com/web/tools/lighthouse/audits/offscreen-images
+* https://github.com/w3c/IntersectionObserver/tree/master/polyfill
+* https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp

@@ -37,6 +37,7 @@
 * [Development Google](https://developers.google.com/web/)
 * [HTML5 Rocks](https://www.html5rocks.com/en/)
 * [SEO Google](https://www.google.com/webmasters/)
+* [browser rendring optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)
 
 ## UX
 [Nielsen Norman Group](https://www.nngroup.com/)

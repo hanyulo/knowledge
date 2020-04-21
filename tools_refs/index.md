@@ -10,6 +10,9 @@
 
 ## Development Appendix
 
+### Browser
+* [chrome dev console](https://developers.google.com/web/tools/chrome-devtools)
+
 ### Project Monitor
 * [Logrocker](https://logrocket.com/)
 
@@ -36,6 +39,9 @@
 * [Email Development](https://www.campaignmonitor.com/css/positioning-display/object-fit/)
 * [Current Javascript](https://kangax.github.io/compat-table/es6/)
 * [node.green](https://node.green/)
+* [css trick](https://csstriggers.com/)
+* [composite properties](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count)
+    * transition + transform -> layer -> good efficiency
 
 ### Markdown
 * [Markdown CheetSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
