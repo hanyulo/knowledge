@@ -1,10 +1,16 @@
-# Database Design Concept
-
-## Video
-* https://www.youtube.com/watch?v=ztHopE5Wnpc
-* process
-  * 2:13
+# what is Database
+* store massive data
+* query
+* Administration (authorization/permission)
 
 
-## Instructor
-* https://www.calebcurry.com/freecodecamp-database-design-full-course/
+
+
+## Overview
+* progress
+    * https://youtu.be/ztHopE5Wnpc?t=2252
+
+
+## References
+* [Video](https://www.youtube.com/watch?v=ztHopE5Wnpc)
+* [Instructor](https://www.calebcurry.com/freecodecamp-database-design-full-course/)

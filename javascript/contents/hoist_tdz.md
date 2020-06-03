@@ -61,3 +61,6 @@ function test() {
 test()
 
 ```
+
+## Refs
+* https://blog.techbridge.cc/2018/11/10/javascript-hoisting/
