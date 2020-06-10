@@ -108,11 +108,17 @@
 * column === attribute === field
 * value: items in tuple
 * entity
-    * what is data about
+    * is anything we store data about
+        * a shell
+        * each entity can have multiple attributes
+            * student
+            * professor
+            * class
+            * ...
     * an entity
         * a table
     * a specific entity
-        * a row 
+        * a row
 
 
 * progress

@@ -8,7 +8,7 @@
 
 ## Overview
 * progress
-    * https://youtu.be/ztHopE5Wnpc?t=2252
+    * https://www.youtube.com/watch?v=GJbtDTGmOGY&list=PL_c9BZzLwBRK0Pc28IdvPQizD2mJlgoID&index=20
 
 
 ## References

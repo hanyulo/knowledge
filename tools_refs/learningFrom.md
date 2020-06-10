@@ -2,6 +2,7 @@
 * [Front-End-Master](https://frontendmasters.com/books/front-end-handbook/2019/)
 * [Front-End-Road](https://github.com/kamranahmedse/developer-roadmap)
 * [khanacademy](https://www.khanacademy.org/)
+* [algoExpert](https://www.algoexpert.io/purchase)
 
 ## Javascript
 * [The Modern Javascript Tutorial](https://javascript.info/)
