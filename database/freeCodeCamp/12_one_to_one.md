@@ -1,4 +1,4 @@
-# One to One
+# One to One (1:1)
 
 * one entity can only be related to another one entitiy
 * example

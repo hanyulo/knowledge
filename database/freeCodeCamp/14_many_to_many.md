@@ -1,4 +1,4 @@
-# Many to Many
+# Many to Many (M:N)
 
 
 ## Example
@@ -13,4 +13,4 @@
         * student can take multiple classes
 
 ## Caveats
-* many to many relationships do not work in relational database 
+* many to many relationships do not work in relational database

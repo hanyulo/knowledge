@@ -1,4 +1,4 @@
-# One to Many
+# One to Many (1:N)
 * one entity can have relationship with multiple other entities
     * those other entities can only relate back to only the one entity
 

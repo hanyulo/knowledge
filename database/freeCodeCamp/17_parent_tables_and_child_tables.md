@@ -18,7 +18,7 @@
 * child inherit value from parent
 * you can't see child in parent
 * parent create child
-* one to many
+* one to many -> parents have many childen
 * example
     * user <-> review
         * when you see a youtube review, you know who post it
