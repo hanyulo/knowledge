@@ -10,7 +10,7 @@
     * the least number of columns to make single row unique
     * example
         1. username
-        2. id
+        2. first_name + last_name
 
 
 ## Design Table

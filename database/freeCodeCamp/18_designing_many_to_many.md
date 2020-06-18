@@ -43,6 +43,7 @@
         * has primary key
     3. Junction table
         * has differet foreign keys which point back to class || student table
+        * each row should be unique, so the whole row actually can be primary key.
 
 * relationships
     * 1:N (one to many)

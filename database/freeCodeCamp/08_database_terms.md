@@ -59,8 +59,10 @@
             * monry
             * object
 * relation
-    * connection between two sets of data
     * another name for table (a bunch of sets of data)
+
+* relationship
+    * connection between two sets of data (table)
 
 * table (physical represation of relation)
     * rows

@@ -2,7 +2,7 @@
 * keys keep everything unique
 
 ## Keys
-* **three main rules**
+* **three main rules** for **primary keys**
     * must be unique
     * never change
     * nver have null value
