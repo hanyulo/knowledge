@@ -20,7 +20,7 @@
 #### Caveat
 * If the programs on both ends of the socket simply wait for some data without sending anything, they will wait for a very long time, so an important part of programs that communicate over the Internet is to have some sort of protocol.
 * A protocol is a set of precise rules that determine who is to go first, what they are to do, and then what the responses are to that message, and who sends next, and so on. In a sense the two applications at either end of the socket are doing a dance and making sure not to step on each other's toes.
-* There are many documents that describe these network protocols. The Hypertext Transfer Protocol is described in the following document:
+* There are many documents that describe these network protocols.
 
 ## Example (HTTP Server)
 
@@ -51,7 +51,7 @@ cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
 mysock.send(cmd)
 
 while True:
-    # buffer siae === 512 characters
+    # buffer size === 512 characters
     data = mysock.recv(512)
     if len(data) < 1:
         break
@@ -102,6 +102,21 @@ fhand.close()
 ```
 
 ## Retrieving web pages with urllib
+
+* read text
+
+```python
+
+import urllib.request
+
+fhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+for line in fhand:
+    print(line.decode().strip())
+
+
+```
+
+## Not Finished
 
 
 ## Need Phantom
