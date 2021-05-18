@@ -6,13 +6,13 @@
 * | student_id | name | registration_number | branch | address |
     * student_id === primary key
         * determine a tuple
-        * column depends on it
+        * other columns depends on it
             * form functional dependency
 
 ## Partial Dependency
 
 * example
-| score_id | studend_id | subject_id | marks | teacher |
+| score_id | student_id | subject_id | marks | teacher |
 | -- | -- | -- | -- | -- |
 | 1 | 10 | 1 | 70 | Java Teacher |
 | 2 | 10 | 2 | 75 | C++ Teacher |
@@ -20,11 +20,11 @@
 
 * student_id + subject_id
     * form a candidate key
-        * which is a prmary key
+        * which is a primary key
 * `teacher`
     * only depends on subject_id
     * does not depend on student_id
-    * **form a prtial dependency**
+    * **form a partial dependency**
 
 
 ## Solution

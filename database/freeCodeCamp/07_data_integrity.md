@@ -4,11 +4,11 @@
     * data redundancy
     * incorrect value
 
-* what is relatipnships
+* what is relationships
     * user table <- sale table
         * only if user purchase something, the system create a sale data
     * broken relationship
-        * a user_id of purchase entity in sale table refernce to the non-exist user in user table.
+        * a user_id of purchase entity in sale table reference to the non-exist user in user table.
 
 
 ## Overview
